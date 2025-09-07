@@ -1,6 +1,7 @@
 import asyncio
 from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
 from crawl4ai.markdown_generation_strategy import DefaultMarkdownGenerator
+from langchain_text_splitters import CharacterTextSplitter
 
 async def main():
     config = CrawlerRunConfig(
