@@ -7,7 +7,7 @@ async def main():
         markdown_generator=DefaultMarkdownGenerator()
     )
     async with AsyncWebCrawler() as crawler:
-        result = await crawler.arun("https://example.com", config=config)
+        result = await crawler.arun("https://thelookortho.com.au", config=config)
 
         if result.success:
             print("Raw Markdown Output:\n")
