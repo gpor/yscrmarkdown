@@ -3,6 +3,7 @@ from lib.utils import get_dirs
 import json
 from typing import Optional, Dict, Any, Union
 from pathlib import Path
+from datetime import datetime
 
 @dataclass
 class Project:
@@ -18,7 +19,11 @@ class Project:
 
     def get_scrape_dirs(self) -> list[Path]:
         return get_dirs(self.directory)
-
+    
+    def create_new_scrape_dir(self) -> Path:
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H%M")
+        scrape_dir = self.directory / ('scrape_' + timestamp) / 'yaml'
+        return scrape_dir
 
 @dataclass
 class Scrape:
