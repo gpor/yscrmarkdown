@@ -1,6 +1,7 @@
 import requests
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
+from pathlib import Path
 
 
 
@@ -25,5 +26,19 @@ def url_to_filename(url: str) -> str:
     safe = path or "home"
     return f"{safe}.yaml"
 
+
+def get_dirs(parent_dir:Path) -> list[Path]:
+    try:
+        items = parent_dir.iterdir()
+        subdirectories = [
+            item for item in items if item.is_dir()
+        ]
+        return sorted(subdirectories, key=lambda f: f.stat().st_mtime, reverse=True)
+    except FileNotFoundError:
+        print(f"Directory '{parent_dir}' not found.")
+        return []
+    except PermissionError:
+        print(f"Permission denied to access '{parent_dir}'.")
+        return []
 
 

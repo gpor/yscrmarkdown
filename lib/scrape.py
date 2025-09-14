@@ -1,6 +1,6 @@
 from pathlib import Path
 from datetime import datetime
-from typing import Optional, Dict, Any, Union, Tuple
+from typing import Tuple
 
 def get_scrape_dir(name: Path) -> Tuple[Path, Path]:
     """Get the directory where scrape files are stored."""
