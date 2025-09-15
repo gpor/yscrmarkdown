@@ -1,7 +1,7 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from lib.utils import get_dirs
 import json
-from typing import Optional, Dict, Any, Union
+from typing import Optional
 from pathlib import Path
 from datetime import datetime
 
@@ -12,15 +12,14 @@ class ProjectConfig:
 @dataclass
 class Project:
     name: str
-    directory: Union[Path, None] = None
-    config_path: Union[Path, None] = None
+    directory: Path = field(init=False)
+    config_path: Path = field(init=False)
     config_data: Optional[ProjectConfig] = None
     def __post_init__(self):
         self.directory = Path('storage') / self.name
         self.config_path = self.directory / 'config.json'
         if self.config_path.exists():
-            with open(self.config_path, "r") as file:
-                self.config_data = json.load(file)
+            self.config_data = json.loads(self.config_path.read_text(encoding="utf-8"))
 
     def get_scrape_dirs(self) -> list[Path]:
         return get_dirs(self.directory)
@@ -33,19 +32,22 @@ class Project:
         self.config_data = ProjectConfig(chat_system_prompt=chat_system_prompt)
         if not self.directory.exists():
             self.directory.mkdir(parents=True, exist_ok=True)
-        with open(self.config_path, 'w') as f:
-            json.dump(self.config_data.__dict__, f, indent=2)
+        self.config_path.write_text(
+            json.dumps(self.config_data.__dict__, indent=2),
+            encoding="utf-8"
+        )
 
 @dataclass
 class Scrape:
     project: Project
     name: str
-    directory: Union[Path, None] = None
-    csv_path: Union[Path, None] = None
-    scraped_text_dir: Union[Path, None] = None
-    embedding_model_flag_file_path: Union[Path, None] = None
+    directory: Path = field(init=False)
+    csv_path: Path = field(init=False)
+    scraped_text_dir: Path = field(init=False)
+    embedding_model_flag_file_path: Path = field(init=False)
     def __post_init__(self):
         self.directory = Path(self.project.directory) / self.name
         self.csv_path = self.directory / 'scrape.csv'
         self.scraped_text_dir = self.directory / 'scraped_text'
         self.embedding_model_flag_file_path = self.directory / 'embedding_model_flag.txt'
+
