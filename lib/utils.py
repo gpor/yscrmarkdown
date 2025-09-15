@@ -19,12 +19,12 @@ def get_sitemap_urls(url: str) -> list[str]:
     ]
 
 
-def url_to_filename(url: str) -> str:
+def url_to_filename(url: str, ext: str) -> str:
     """Convert URL path to a safe filename."""
     # turn path /foo/bar/ into "aacg_foo_bar.yaml", root -> "aacg_home.yaml"
     path = urlparse(url).path.strip("/").replace("/", "_")
     safe = path or "home"
-    return f"{safe}.yaml"
+    return f"{safe}.{ext}"
 
 
 def get_dirs(parent_dir:Path) -> list[Path]:
