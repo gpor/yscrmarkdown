@@ -1,0 +1,3 @@
+{
+  "chat_system_prompt": "You are an expert in answering questions about The Look Orthodontists\n\nHere are some relevant frequently asked questions with answers: {retrieved_from_vector_db}\n\nHere is the question to answer: {question} /no_think"
+}
