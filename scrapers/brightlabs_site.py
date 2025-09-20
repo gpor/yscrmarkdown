@@ -1,0 +1,34 @@
+import asyncio
+from lib.scrape import scrape_and_write_to_file
+
+name = 'brightlabs_site' # /storage/{name}/scrape_{timestamp}
+
+urls = [
+    "https://brightlabs.staging.brightlabs.com.au/",
+]
+
+chat_system_prompt = """
+You are an expert in answering questions about Bright Labs Digital Firm
+
+Here are some relevant frequently asked questions with answers:
+{retrieved_from_vector_db}
+
+Here is the question to answer:
+{question}
+
+Use the above information to provide an accurate answer and also provide the metadata IDs from the most relevant documents.
+
+If the information is not sufficient, respond with 'Sorry, I do not have that information /no_think'.
+"""
+
+async def main():
+    await scrape_and_write_to_file(
+        name,
+        urls,
+        chat_system_prompt,
+        output_format='html',
+        auth= ("brightlabs", "brightlabs")
+    )
+
+if __name__ == "__main__":
+    asyncio.run(main())

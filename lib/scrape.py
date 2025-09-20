@@ -1,12 +1,27 @@
 from crawl4ai.extraction_strategy import JsonCssExtractionStrategy
-from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
+from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
 from lib.classes import Project
 from lib.utils import url_to_filename
 import re
+import base64
 
-async def scrape_and_write_to_file(name, urls, chat_system_prompt, output_format='md'):
+def _basic_auth_header(user: str, pwd: str) -> dict:
+    token = base64.b64encode(f"{user}:{pwd}".encode()).decode()
+    return {"Authorization": f"Basic {token}"}
+
+async def scrape_and_write_to_file(
+        name,
+        urls,
+        chat_system_prompt,
+        output_format='md',
+        auth: tuple | None = None
+    ):
     config = CrawlerRunConfig()
     project = Project(name)
+    browser_config = None
+    if auth:
+        user, pwd = auth
+        browser_config = BrowserConfig(headers=_basic_auth_header(user, pwd))
 
     if not project.directory.exists():
         project.directory.mkdir(parents=True, exist_ok=True)
@@ -14,7 +29,7 @@ async def scrape_and_write_to_file(name, urls, chat_system_prompt, output_format
     project.write_config(chat_system_prompt=chat_system_prompt.strip())
     scrape = project.new_scrape()
 
-    async with AsyncWebCrawler() as crawler:
+    async with AsyncWebCrawler(config=browser_config) as crawler:
         for url in urls:
             print(f"→ Scraping {url}")
             result = await crawler.arun(
