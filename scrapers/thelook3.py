@@ -1,5 +1,5 @@
 import asyncio
-from lib.scrape import scrape_to_cleaned_html
+from lib.scrape import scrape_and_write_to_file
 
 name = 'thelook' # /storage/{name}/scrape_{timestamp}
 
@@ -16,7 +16,7 @@ Here is the question to answer: {question} /no_think
 """
 
 async def main():
-    await scrape_to_cleaned_html(name, urls, chat_system_prompt)
+    await scrape_and_write_to_file(name, urls, chat_system_prompt)
 
 if __name__ == "__main__":
     asyncio.run(main())
