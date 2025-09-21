@@ -5,13 +5,13 @@ from lib.utils import url_to_filename, basic_auth_header
 import re
 
 async def scrape_and_write_to_file(
-        name,
-        urls,
-        chat_system_prompt,
+        project_name: str,
+        urls: list[str],
+        chat_system_prompt: str,
         output_format='md',
         auth: tuple | None = None
     ):
-    project = Project(name)
+    project = Project(project_name)
 
     config = CrawlerRunConfig()
     browser_config = None

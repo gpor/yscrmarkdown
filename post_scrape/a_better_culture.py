@@ -1,7 +1,7 @@
 import asyncio
 from lib.scrape import scrape_and_write_to_file
 
-name = 'a_better_culture' # /storage/{name}/scrape_{timestamp}
+name = __name__
 
 
 

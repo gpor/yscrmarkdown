@@ -8,6 +8,7 @@ from datetime import datetime
 @dataclass
 class ProjectConfig:
     chat_system_prompt: str
+    output_format: str
 
 @dataclass
 class Project:
@@ -19,7 +20,7 @@ class Project:
         self.directory = Path('storage') / self.name
         self.config_path = self.directory / 'config.json'
         if self.config_path.exists():
-            self.config_data = json.loads(self.config_path.read_text(encoding="utf-8"))
+            self.config_data = ProjectConfig(**json.loads(self.config_path.read_text(encoding="utf-8")))
 
     def get_scrape_dirs(self) -> list[Path]:
         return get_dirs(self.directory)
@@ -28,8 +29,11 @@ class Project:
         scrape_name = 'scrape_' + datetime.now().strftime("%Y-%m-%d_%H%M")
         return Scrape(project=self, name=scrape_name)
 
-    def write_config(self, chat_system_prompt: str):
-        self.config_data = ProjectConfig(chat_system_prompt=chat_system_prompt)
+    def write_config(self, chat_system_prompt: str, output_format: str):
+        self.config_data = ProjectConfig(
+            chat_system_prompt=chat_system_prompt,
+            output_format=output_format
+        )
         if not self.directory.exists():
             self.directory.mkdir(parents=True, exist_ok=True)
         self.config_path.write_text(
