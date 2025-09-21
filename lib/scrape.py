@@ -1,13 +1,8 @@
 from crawl4ai.extraction_strategy import JsonCssExtractionStrategy
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
 from lib.classes import Project
-from lib.utils import url_to_filename
+from lib.utils import url_to_filename, basic_auth_header
 import re
-import base64
-
-def _basic_auth_header(user: str, pwd: str) -> dict:
-    token = base64.b64encode(f"{user}:{pwd}".encode()).decode()
-    return {"Authorization": f"Basic {token}"}
 
 async def scrape_and_write_to_file(
         name,
@@ -16,12 +11,13 @@ async def scrape_and_write_to_file(
         output_format='md',
         auth: tuple | None = None
     ):
-    config = CrawlerRunConfig()
     project = Project(name)
+
+    config = CrawlerRunConfig()
     browser_config = None
     if auth:
         user, pwd = auth
-        browser_config = BrowserConfig(headers=_basic_auth_header(user, pwd))
+        browser_config = BrowserConfig(headers=basic_auth_header(user, pwd))
 
     if not project.directory.exists():
         project.directory.mkdir(parents=True, exist_ok=True)
@@ -48,7 +44,7 @@ async def scrape_and_write_to_file(
                     raise ValueError(f"Unsupported output format: {output_format}")
                 with open(output_file, 'w', encoding='utf-8') as f:
                     f.write(output_text)
-                print(f"  • Cleaned HTML saved to {output_file}")
+                print(f"  • Text saved to {output_file}")
             else:
                 status = result.status if not result.success else "no cleaned HTML"
                 print(f"  ! Crawl failed for {url}: {status}")

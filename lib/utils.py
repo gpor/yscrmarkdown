@@ -2,6 +2,7 @@ import requests
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 from pathlib import Path
+import base64
 
 
 
@@ -41,4 +42,7 @@ def get_dirs(parent_dir:Path) -> list[Path]:
         print(f"Permission denied to access '{parent_dir}'.")
         return []
 
+def basic_auth_header(user: str, pwd: str) -> dict:
+    token = base64.b64encode(f"{user}:{pwd}".encode()).decode()
+    return {"Authorization": f"Basic {token}"}
 
