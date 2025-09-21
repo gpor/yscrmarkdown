@@ -23,6 +23,6 @@ async def main():
         __name__.split('.')[0],
         urls,
         chat_system_prompt,
-        output_format='md',
+        'json',
     )
 

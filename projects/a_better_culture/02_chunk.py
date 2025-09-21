@@ -6,7 +6,23 @@ def process_scraped_text(scrape: Scrape):
     print(f"Processing scraped text in directory: {scrape.scraped_text_dir}")
     for text_file in scrape.scraped_text_dir.glob(f"*.{scrape.project.config_data.output_format}"):
         print(f"Found text file: {text_file}")
-        # Add further processing as needed
+        # todo read text from text file
+        text = text_file.read_text(encoding="utf-8")
+        print(f"Text content (first 100 chars): {text[:100]}...")
+        # convert text into nested elements
+        """
+        dom = [
+            {
+                "el": "html",
+                "children": [
+                    {"el": "body", "children": [ ... ]
+                ]
+            }
+        ]
+        """
+        
+        
+        
 
 
 async def main():
