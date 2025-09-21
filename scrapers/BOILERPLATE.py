@@ -2,8 +2,6 @@ import asyncio
 from lib.scrape import scrape_and_write_to_file
 from lib.find_internal_links import find_internal_links
 
-name = 'xxxx' # /storage/{name}/scrape_{timestamp}
-
 urls = [
     "https://XXXX",
 ]
@@ -36,5 +34,3 @@ async def main():
         output_format='html',
     )
 
-if __name__ == "__main__":
-    asyncio.run(main())

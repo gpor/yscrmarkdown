@@ -2,11 +2,6 @@ import asyncio
 from lib.scrape import scrape_and_write_to_file
 from lib.find_internal_links import find_internal_links
 
-name = 'brightlabs_site' # /storage/{name}/scrape_{timestamp}
-
-url_home = "https://brightlabs.staging.brightlabs.com.au/"
-auth=("brightlabs", "brightlabs")
-
 urls = [
     "https://brightlabs.staging.brightlabs.com.au/work/entain",
     "https://brightlabs.staging.brightlabs.com.au/platforms-partnerships/epicor",
@@ -127,9 +122,11 @@ Use the above information to provide an accurate answer and also provide the met
 If the information is not sufficient, respond with 'Sorry, I do not have that information /no_think'.
 """
 
+auth=("brightlabs", "brightlabs")
+
 async def main():
     # urls = await find_internal_links(
-    #     url_home,
+    #     "https://brightlabs.staging.brightlabs.com.au/",
     #     max_depth=2,
     #     auth=auth
     # )
@@ -138,12 +135,10 @@ async def main():
     #     print(u)
     # exit()
     await scrape_and_write_to_file(
-        name,
+        __name__,
         urls,
         chat_system_prompt,
         output_format='html',
         auth=auth
     )
 
-if __name__ == "__main__":
-    asyncio.run(main())

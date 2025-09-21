@@ -1,7 +1,4 @@
-import asyncio
 from lib.scrape import scrape_and_write_to_file
-
-name = 'a_better_culture' # /storage/{name}/scrape_{timestamp}
 
 urls = [
     "https://abetterculture.org.au/people/dr-nicole-higgins",
@@ -60,11 +57,9 @@ If the information is not sufficient, respond with 'Sorry, I do not have that in
 
 async def main():
     await scrape_and_write_to_file(
-        name,
+        __name__,
         urls,
         chat_system_prompt,
         output_format='html',
     )
 
-if __name__ == "__main__":
-    asyncio.run(main())
