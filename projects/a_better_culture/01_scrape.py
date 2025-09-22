@@ -1,7 +1,8 @@
 from lib.scrape import scrape_and_write_to_file
 
 urls = [
-    "https://abetterculture.org.au/",
+    # "https://abetterculture.org.au/",
+    "https://abetterculture.org.au/about-us",
 ]
 
 chat_system_prompt = """
@@ -23,6 +24,6 @@ async def main():
         __name__.split('.')[0],
         urls,
         chat_system_prompt,
+        # 'html',
         'json',
     )
-
