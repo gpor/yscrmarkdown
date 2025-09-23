@@ -9,10 +9,10 @@ async def scrape_and_write_to_file(
         auth: tuple | None = None
     ):
     project = Project(project_name)
-    
-    if (output_format == 'json'):
+
+    if output_format == 'json' or output_format == 'yaml':
         from lib.scrape_dom_walk_pw import Url_iterator_pw
-        url_iterator = Url_iterator_pw(urls)
+        url_iterator = Url_iterator_pw(urls, output_format)
     else:
         from lib.scrape_crawl4ai import Url_iterator
         url_iterator = Url_iterator(urls, output_format, auth)

@@ -1,7 +1,7 @@
 from lib.scrape import scrape_and_write_to_file
 
 urls = [
-    # "https://abetterculture.org.au/",
+    "https://abetterculture.org.au/",
     "https://abetterculture.org.au/about-us",
 ]
 
@@ -25,5 +25,6 @@ async def main():
         urls,
         chat_system_prompt,
         # 'html',
-        'json',
+        'yaml',
+        # 'json',
     )

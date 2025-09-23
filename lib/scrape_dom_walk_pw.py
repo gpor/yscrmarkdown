@@ -1,6 +1,6 @@
 from playwright.async_api import async_playwright
-import pprint
 import json
+from pathlib import Path
 
 async def node_to_dict(element):
     allowed_tags = ["body", "div", "main", "ul", "li",
@@ -10,69 +10,10 @@ async def node_to_dict(element):
                     "pre", "code", "blockquote",
                     # "hr", "br",
                     ]
-
+    js_file = Path("js/dom_walker.js")
+    js_code = js_file.read_text()
     dom = await element.evaluate(
-        """(el, allowed) => {
-            const inline = ["strong", "em", "b", "i", "span", "a"];
-            function walk(node) {
-                if (node.nodeType === 3) { // text node
-                    return null;
-                }
-
-                if (node.nodeType === 1) { // element node
-                    let tag = node.tagName.toLowerCase();
-
-                    // Skip disallowed tags entirely
-                    if (!allowed.includes(tag) && !inline.includes(tag)) {
-                        return null;
-                    }
-
-                    // If it's an inline tag, flatten it: return its children directly
-                    if (inline.includes(tag)) {
-                        let children = [];
-                        node.childNodes.forEach(child => {
-                            let c = walk(child);
-                            if (c) {
-                                // Inline child might be array (flatten)
-                                if (Array.isArray(c)) {
-                                    children.push(...c);
-                                } else {
-                                    children.push(c);
-                                }
-                            }
-                        });
-                        return children.length ? children : null;
-                    }
-
-                    // Normal allowed block-level element
-                    let obj = { el: tag };
-
-                    // direct text children only
-                    const directText = Array.from(node.childNodes)
-                        .filter(c => c.nodeType === 3 && c.nodeValue.trim())
-                        .map(c => c.nodeValue.trim())
-                        .join(" ");
-                    if (directText) obj.text = directText;
-
-                    let children = [];
-                    node.childNodes.forEach(child => {
-                        let c = walk(child);
-                        if (c) {
-                            if (Array.isArray(c)) {
-                                children.push(...c);
-                            } else {
-                                children.push(c);
-                            }
-                        }
-                    });
-
-                    if (children.length) obj.children = children;
-                    return obj;
-                }
-                return null;
-            }
-            return walk(el);
-        }""",
+        js_code,
         allowed_tags
     )
     return dom
@@ -88,14 +29,19 @@ async def walk_dom(url):
         return dom
 
 class Url_iterator_pw:
-    def __init__(self, urls):
+    def __init__(self, urls, output_format):
         self.urls = urls
+        self.output_format = output_format
 
     async def crawl(self):
         for url in self.urls:
             dom = await walk_dom(url)
-            text_json = json.dumps(dom, indent=2)
-            yield url, text_json
+            if self.output_format == 'yaml':
+                import yaml
+                output_text = yaml.dump(dom, sort_keys=False)
+            else:
+                output_text = json.dumps(dom, indent=2)
+            yield url, output_text
             
 
 
