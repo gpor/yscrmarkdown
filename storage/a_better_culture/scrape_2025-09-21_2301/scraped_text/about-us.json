@@ -1,0 +1,873 @@
+{
+  "el": "body",
+  "children": [
+    {
+      "el": "div",
+      "children": [
+        {
+          "el": "div",
+          "children": [
+            {
+              "el": "div",
+              "children": [
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "div"
+                    },
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "div",
+                                  "children": [
+                                    {
+                                      "el": "div",
+                                      "children": [
+                                        {
+                                          "el": "div"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "div"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "div",
+                                  "children": [
+                                    {
+                                      "el": "div",
+                                      "children": [
+                                        {
+                                          "el": "div",
+                                          "children": [
+                                            {
+                                              "el": "div",
+                                              "children": [
+                                                {
+                                                  "el": "div"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "el": "div",
+          "children": [
+            {
+              "el": "div",
+              "children": [
+                {
+                  "el": "div"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "el": "section",
+          "children": [
+            {
+              "el": "div",
+              "children": [
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "h1"
+                    },
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "p",
+                                  "text": "A Better Culture is a coalition of health professionals who know that working in healthcare does not have to be traumatising. Who know that we can make things better. We can choose to eliminate bullying, to stamp out all forms of harassment, to have zero tolerance for racism, and to wipe discrimination off the face of the profession. We know that we can build",
+                                  "children": [
+                                    {
+                                      "el": "br"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "p",
+                                  "text": "Dr Jillann Farmer"
+                                },
+                                {
+                                  "el": "p",
+                                  "text": "Chief Executive Officer"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "el": "div",
+          "children": [
+            {
+              "el": "section",
+              "children": [
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "h2",
+                                  "text": "The Why"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "p",
+                                  "text": "Because none of these things have a place in a culture that is supposed to be about caring. Healthcare workers who are exhausted from the constant onslaught of bullying or from the oppressive weight of racism, can\u2019t do their best work. Some of them leave \u2013 sometimes for a while, sometimes forever. And discrimination means that we don\u2019t have a merit-based system \u2013 we aren\u2019t ensuring that the best people do the work they are most suited for. Building #ABetterCulture will mean we build Better Healthcare. And that\u2019s for everyone\u2019s benefit.",
+                                  "children": [
+                                    {
+                                      "el": "br"
+                                    },
+                                    {
+                                      "el": "br"
+                                    },
+                                    {
+                                      "el": "br"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "div",
+                                  "children": [
+                                    {
+                                      "el": "div"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "el": "div",
+                                  "children": [
+                                    {
+                                      "el": "div"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "el": "section",
+              "children": [
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "h2",
+                          "text": "What Makes A Better Culture Different?"
+                        }
+                      ]
+                    },
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "p",
+                          "text": "We are taking a different approach to creating a safer, more effective workplace. We are challenging the system, and those who drive it, to provide safety to the people in it.\u00a0But it will take all parts of the health system to create lasting change."
+                        },
+                        {
+                          "el": "p",
+                          "children": [
+                            {
+                              "el": "br"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "p",
+                          "text": "This is an invitation to everyone - Doctors, Nurses, Midwives and Allied Health workers, to be a part of creating psychological safety in a system and culture that currently undermines it."
+                        },
+                        {
+                          "el": "p",
+                          "children": [
+                            {
+                              "el": "br"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "p",
+                          "text": "Healthcare must be accountable as a workplace. first and foremost, then better outcomes for staff and patients will follow."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "el": "div",
+              "children": [
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "h2",
+                      "text": "The Team"
+                    },
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Komal Daredia"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Project Manager"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Dr Sarah Jane Springer"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Senior Medical Advisor"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Jade Rameka"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Project Admin"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Maddy Roberts"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Project Admin"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "h2",
+                      "text": "The Board"
+                    },
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Dr Jillann Farmer"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Our CEO"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Ms Helen Szoke AO"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Our Chair"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Dr Louis Peachey"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Aboriginal and Torres Strait Islander Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Dr Nicole Higgins"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "CPMC Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Dr Karen Stringer"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Independent Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Carly Dober"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Australian Association of Psychologists Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "David Clarke"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Health Consumer Body Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Judy Finn"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Independent Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Dr Elise Buisson"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "AMADT Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Karen Grace"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "Nursing and Midwifery Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        },
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div"
+                            },
+                            {
+                              "el": "article",
+                              "children": [
+                                {
+                                  "el": "h3",
+                                  "text": "Dr Clare Skinner"
+                                },
+                                {
+                                  "el": "h4",
+                                  "text": "CPMC Member"
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "el": "div",
+          "children": [
+            {
+              "el": "section",
+              "children": [
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div",
+                          "children": [
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "div"
+                                },
+                                {
+                                  "el": "div",
+                                  "children": [
+                                    {
+                                      "el": "div",
+                                      "children": [
+                                        {
+                                          "el": "div",
+                                          "children": [
+                                            {
+                                              "el": "h3",
+                                              "text": "Stay informed"
+                                            },
+                                            {
+                                              "el": "p",
+                                              "text": "Sign up for all the latest news and updates"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "el": "div",
+                              "children": [
+                                {
+                                  "el": "div",
+                                  "children": [
+                                    {
+                                      "el": "div",
+                                      "children": [
+                                        {
+                                          "el": "h3",
+                                          "text": "Have a question?"
+                                        },
+                                        {
+                                          "el": "p",
+                                          "text": "Get in touch and find out if we can assist you"
+                                        },
+                                        {
+                                          "el": "div"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "el": "div",
+                                      "children": [
+                                        {
+                                          "el": "h3",
+                                          "text": "Follow us"
+                                        },
+                                        {
+                                          "el": "div"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "el": "div",
+                                      "children": [
+                                        {
+                                          "el": "h3",
+                                          "text": "Spread the word and share"
+                                        },
+                                        {
+                                          "el": "div"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "el": "div",
+                                      "children": [
+                                        {
+                                          "el": "div"
+                                        },
+                                        {
+                                          "el": "div",
+                                          "text": "\u00a9 Copyright 2025 ABetterCulture Australia. All\u00a0rights\u00a0reserved."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "div",
+                      "children": [
+                        {
+                          "el": "div"
+                        },
+                        {
+                          "el": "div"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "el": "section",
+              "children": [
+                {
+                  "el": "div",
+                  "children": [
+                    {
+                      "el": "h3",
+                      "text": "Acknowledgement of country"
+                    },
+                    {
+                      "el": "p",
+                      "text": "A Better Culture acknowledges and pays respect to the Traditional Owners of the lands across Australia and extends gratitude for their contributions to health and healing. We pay respect to Elders and ancestors past and present and acknowledge that Sovereignty was never ceded."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "el": "div",
+              "children": [
+                {
+                  "el": "h3",
+                  "text": "Copied!"
+                },
+                {
+                  "el": "p",
+                  "text": "Link copied to you clipboard!"
+                },
+                {
+                  "el": "p",
+                  "text": "Unfortunately, your browser doesn't support sharing feature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "el": "div"
+        }
+      ]
+    }
+  ]
+}
