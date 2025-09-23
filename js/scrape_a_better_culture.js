@@ -1,5 +1,5 @@
 
-const allowed = new Set([
+const allow = new Set([
   "body", "div", "main", "ul", "li",
   "h1", "h2", "h3", "h4", "h5", "h6", "p",
   "section", "article", "header", "footer", "nav",
@@ -9,11 +9,11 @@ const allowed = new Set([
 
 const inline = new Set(["strong", "em", "b", "i", "span", "a"]);
 
-function w28(node, depth = 20) {
+function walk(node, depth = 20) {
   const el = node.tagName ? node.tagName.toLowerCase() : null;
   const text = node.nodeValue ? node.nodeValue.trim() : null;
   
-  if (!text && !allowed.has(el) && !inline.has(el)) {
+  if (!text && !allow.has(el) && !inline.has(el)) {
     return null;
   }
   
@@ -25,11 +25,11 @@ function w28(node, depth = 20) {
   
   const classes = node.classList ? [...node.classList] : [];
   if (classes.length) {
-    props.class = classes[0];
+    props.cls = classes.join(' ');
   }
   
   if (text) {
-    props.text = text;
+    props.TEXT__ = text;
   }
 
   if (depth > 0) {
@@ -38,7 +38,7 @@ function w28(node, depth = 20) {
       let children = [];
       let textNodes = [];
       [...nodes].forEach(child => {
-        const child_props = w28(child, depth - 1);
+        const child_props = walk(child, depth - 1);
         if (child_props) {
           if (child_props.text && !child_props.el) {
             textNodes.push(child_props.text);
@@ -47,7 +47,7 @@ function w28(node, depth = 20) {
             if (typeof _nodes[Symbol.iterator] === 'function') {
               let inline_texts = [];
               [..._nodes].filter(n => n.nodeType === Node.TEXT_NODE).forEach(n => {
-                const n_props = w26(n, depth - 1);
+                const n_props = walk(n, depth - 1);
                 if (n_props && n_props.text) {
                   inline_texts.push(n_props.text);
                 }
@@ -62,10 +62,10 @@ function w28(node, depth = 20) {
         }
       })
       if (children.length) {
-        props.children = children;
+        props.chl = children;
       }
       if (textNodes.length) {
-        props.text = textNodes.join(' ');
+        props.TEXT__ = textNodes.join(' ');
       }
     }
   } else {

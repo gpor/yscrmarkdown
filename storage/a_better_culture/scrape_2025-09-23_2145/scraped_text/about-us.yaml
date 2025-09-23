@@ -1,0 +1,495 @@
+el: body
+cls: ltr
+ch:
+- el: div
+  ch:
+  - el: div
+    cls: top-menu sticky top-0 z-20 w-full bg-white border-b border-solid border-black/20
+    ch:
+    - el: div
+      cls: center-frame-wide
+      ch:
+      - el: div
+        cls: flex
+        ch:
+        - el: div
+          cls: _nav
+          ch:
+          - el: div
+            cls: flex items-center gap-[3rem]
+            ch:
+            - el: div
+              cls: -with-children
+              ch:
+              - el: div
+                cls: -sub-menu
+                ch:
+                - el: div
+                  ch:
+                  - el: div
+                    TEXT__: Reference Groups Working Groups
+            TEXT__: Stay Informed
+        - el: div
+          cls: _mobile-menu-trigger
+          ch:
+          - el: div
+            cls: mobile-menu
+            ch:
+            - el: div
+              cls: -links center-frame-wide
+              ch:
+              - el: div
+                cls: flex flex-col mt-8 font-[23px] font-medium
+                ch:
+                - el: div
+                  cls: -children
+                  ch:
+                  - el: div
+                    cls: -expander
+                    ch:
+                    - el: div
+                      cls: -height
+                      ch:
+                      - el: div
+                        cls: -inner
+                        TEXT__: Reference Groups Working Groups
+  - el: section
+    cls: hero pb-[2rem] md:pb-[4rem] lg:pb-[7rem]
+    ch:
+    - el: div
+      cls: center-frame-wide
+      ch:
+      - el: div
+        cls: md:px-20
+        ch:
+        - el: h1
+          cls: pt-4 pb-8 mt-8 font-serif text-2xl text-center md:text-title-huge md:leading-none
+            text-theme-primary md:text-left md:mt-12 md:pt-11 md:pb-16
+          TEXT__: Welcome to A Better Culture
+        - el: div
+          cls: flex flex-col-reverse gap-6 md:flex-row md:gap-12
+          ch:
+          - el: div
+            cls: flex-initial
+            ch:
+            - el: div
+              cls: text-base md:text-xl md:leading-[35px]
+              ch:
+              - el: p
+                TEXT__: 'A Better Culture is a coalition of health professionals who
+                  know that working in healthcare does not have to be traumatising.
+                  Who know that we can make things better. We can choose to eliminate
+                  bullying, to stamp out all forms of harassment, to have zero tolerance
+                  for racism, and to wipe discrimination off the face of the profession.
+                  We know that we can build # ABetterCulture.'
+            - el: div
+              cls: mt-8 mb-8 font-serif md:mt-12
+              ch:
+              - el: p
+                cls: text-lg md:text-[32px] mb-4
+                TEXT__: Dr Jillann Farmer
+              - el: p
+                cls: mb-4 text-base md:text-xl
+                TEXT__: Chief Executive Officer
+  - el: div
+    cls: overflow-hidden
+    ch:
+    - el: section
+      cls: box-border min-h-theme bg-theme-grey --theme-visibility
+      ch:
+      - el: div
+        cls: center-frame-wide
+        ch:
+        - el: div
+          cls: flex flex-col-reverse md:flex-row md:gap-16 md:px-20 min-h-theme justify-stretch
+          ch:
+          - el: div
+            cls: flex flex-col justify-center flex-auto pt-16 md:basis-5/12 pb-[4rem]
+              md:pb-0
+            ch:
+            - el: div
+              cls: flex flex-col gap-5 md:flex-row md:items-center md:mb-14
+              ch:
+              - el: h2
+                cls: section-header
+                TEXT__: The Why
+            - el: div
+              cls: text-base md:text-xl md:leading-[35px]
+              ch:
+              - el: p
+                TEXT__: "Because none of these things have a place in a culture that\
+                  \ is supposed to be about caring. Healthcare workers who are exhausted\
+                  \ from the constant onslaught of bullying or from the oppressive\
+                  \ weight of racism, can\u2019t do their best work. Some of them\
+                  \ leave \u2013 sometimes for a while, sometimes forever. And discrimination\
+                  \ means that we don\u2019t have a merit-based system \u2013 we aren\u2019\
+                  t ensuring that the best people do the work they are most suited\
+                  \ for. Building #ABetterCulture will mean we build Better Healthcare.\
+                  \ And that\u2019s for everyone\u2019s benefit."
+    - el: section
+      cls: dark-section box-border flex items-center text-white bg-theme-dark-green
+        --theme-visibility
+      ch:
+      - el: div
+        cls: center-frame py-16 mx-auto md:pt-28 md:pb-[3rem] 2xl:pt-44 2xl:pb-[6.75rem]
+        ch:
+        - el: div
+          cls: items-center section-header-block
+          ch:
+          - el: h2
+            cls: section-header
+            TEXT__: What Makes A Better Culture Different?
+        - el: div
+          cls: text-base mt-4 md:mt-14 md:mb-14 max-w-[1100px] prose-p:leading-[35px]
+            md:text-[20px] font-normal
+          ch:
+          - el: p
+            TEXT__: "We are taking a different approach to creating a safer, more\
+              \ effective workplace. We are challenging the system, and those who\
+              \ drive it, to provide safety to the people in it.\_But it will take\
+              \ all parts of the health system to create lasting change."
+          - el: p
+            TEXT__: This is an invitation to everyone - Doctors, Nurses, Midwives
+              and Allied Health workers, to be a part of creating psychological safety
+              in a system and culture that currently undermines it.
+          - el: p
+            TEXT__: Healthcare must be accountable as a workplace. It must be safe
+              first and foremost, then better outcomes for staff and patients will
+              follow.
+    - el: div
+      cls: people-grids --theme-visibility
+      ch:
+      - el: div
+        cls: center-frame-wide
+        ch:
+        - el: h2
+          TEXT__: The Team
+        - el: div
+          cls: people-grid
+          ch:
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Komal Daredia
+              - el: h4
+                cls: -position
+                TEXT__: Project Manager
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Dr Sarah Jane Springer
+              - el: h4
+                cls: -position
+                TEXT__: Senior Medical Advisor
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Jade Rameka
+              - el: h4
+                cls: -position
+                TEXT__: Project Admin
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Maddy Roberts
+              - el: h4
+                cls: -position
+                TEXT__: Project Admin
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+      - el: div
+        cls: center-frame-wide
+        ch:
+        - el: h2
+          TEXT__: The Board
+        - el: div
+          cls: people-grid
+          ch:
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Dr Jillann Farmer
+              - el: h4
+                cls: -position
+                TEXT__: Our CEO
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Ms Helen Szoke AO
+              - el: h4
+                cls: -position
+                TEXT__: Our Chair
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Dr Louis Peachey
+              - el: h4
+                cls: -position
+                TEXT__: Aboriginal and Torres Strait Islander Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Dr Nicole Higgins
+              - el: h4
+                cls: -position
+                TEXT__: CPMC Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Dr Karen Stringer
+              - el: h4
+                cls: -position
+                TEXT__: Independent Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Carly Dober
+              - el: h4
+                cls: -position
+                TEXT__: Australian Association of Psychologists Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: David Clarke
+              - el: h4
+                cls: -position
+                TEXT__: Health Consumer Body Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Judy Finn
+              - el: h4
+                cls: -position
+                TEXT__: Independent Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Dr Elise Buisson
+              - el: h4
+                cls: -position
+                TEXT__: AMADT Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Karen Grace
+              - el: h4
+                cls: -position
+                TEXT__: Nursing and Midwifery Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+          - el: div
+            cls: -person
+            ch:
+            - el: article
+              ch:
+              - el: h3
+                cls: -full-name
+                TEXT__: Dr Clare Skinner
+              - el: h4
+                cls: -position
+                TEXT__: CPMC Member
+            - el: div
+              cls: -button
+              TEXT__: Read Bio
+  - el: div
+    ch:
+    - el: section
+      cls: -green box-border
+      ch:
+      - el: div
+        cls: -main
+        ch:
+        - el: div
+          cls: center-frame-wide
+          ch:
+          - el: div
+            cls: flex flex-col py-24 lg:flex-row md:py-28 gap-12 md:gap-[3rem] lg:gap-36
+            ch:
+            - el: div
+              cls: flex flex-col flex-initial lg:flex-row md:gap-[2rem] lg:gap-12
+              ch:
+              - el: div
+                cls: flex flex-col justify-between flex-initial md:justify-start lg:justify-between
+                  md:flex-row lg:flex-col md:gap-[4rem] lg:gap-0
+                ch:
+                - el: div
+                  cls: footer-subscribe
+                  ch:
+                  - el: div
+                    cls: -intro
+                    ch:
+                    - el: h3
+                      TEXT__: Stay informed
+                    - el: p
+                      TEXT__: Sign up for all the latest news and updates
+            - el: div
+              cls: flex flex-col justify-between flex-initial
+              ch:
+              - el: div
+                cls: flex flex-col gap-12
+                ch:
+                - el: div
+                  cls: contact-cta
+                  ch:
+                  - el: h3
+                    TEXT__: Have a question?
+                  - el: p
+                    TEXT__: Get in touch and find out if we can assist you
+                  - el: div
+                    cls: flex flex-col gap-4 items-start
+                    TEXT__: Contact us
+                - el: div
+                  cls: footer-follow
+                  ch:
+                  - el: h3
+                    TEXT__: Follow us
+                - el: div
+                  cls: footer-share
+                  ch:
+                  - el: h3
+                    TEXT__: Spread the word and share
+                - el: div
+                  cls: footer-nav flex flex-col text-sm font-medium gap-7 text-theme-dark-green
+                  ch:
+                  - el: div
+                    cls: flex flex-wrap lg:flex-nowrap justify-between md:justify-start
+                      lg:justify-normal gap-[1.5rem] md:gap-10 text-footer-menu text-theme-dark-green
+                    TEXT__: About us Resources & News Contact us
+                  - el: div
+                    cls: hidden
+                    TEXT__: "\xA9 Copyright 2025 ABetterCulture Australia. All\_rights\_\
+                      reserved."
+      - el: div
+        cls: -legal-and-brightlabs
+        ch:
+        - el: div
+          cls: mx-auto
+          ch:
+          - el: div
+            cls: -legal
+            TEXT__: Terms & Conditions Privacy Policy
+          - el: div
+            cls: -brightlabs
+            TEXT__: Bright Labs
+    - el: section
+      cls: footer-acknowledgement box-border flex items-center justify-center bg-center
+        bg-no-repeat bg-cover bg-theme-green py-14 md:py-28 px-[1rem] md:px-0
+      ch:
+      - el: div
+        cls: bg-overlay-dark h-auto md:max-w-[825px] px-8 py-12 md:px-20 md:py-20
+          text-white text-center
+        ch:
+        - el: h3
+          cls: text-[25px] -mx-8 md:mx-0 md:text-35 text-bold
+          TEXT__: Acknowledgement of country
+        - el: p
+          cls: mt-6 leading-7 text-15 md:leading-9 md:mt-8
+          TEXT__: A Better Culture acknowledges and pays respect to the Traditional
+            Owners of the lands across Australia and extends gratitude for their contributions
+            to health and healing. We pay respect to Elders and ancestors past and
+            present and acknowledge that Sovereignty was never ceded.
+    - el: div
+      cls: p-12 text-center shadow-sl shadow-gray-500 backdrop-blur-sm
+      ch:
+      - el: h3
+        cls: mb-4 text-xl font-semibold
+        TEXT__: Copied!
+      - el: p
+        cls: font-medium
+        TEXT__: Link copied to you clipboard!
+      - el: p
+        TEXT__: Unfortunately, your browser doesn't support sharing feature

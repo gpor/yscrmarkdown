@@ -1,4 +1,4 @@
 {
   "chat_system_prompt": "You are an expert in answering questions about A Better Culture\n\nHere are some relevant frequently asked questions with answers:\n{retrieved_from_vector_db}\n\nHere is the question to answer:\n{question}\n\nUse the above information to provide an accurate answer and also provide the metadata IDs from the most relevant documents.\n\nIf the information is not sufficient, respond with 'Sorry, I do not have that information /no_think'.",
-  "output_format": "json"
+  "output_format": "yaml"
 }
