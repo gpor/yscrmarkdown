@@ -1,0 +1,600 @@
+el: body
+cls: ltr
+ch:
+- el: div
+  ch:
+  - el: div
+    cls: top-menu sticky top-0 z-20 w-full bg-white border-b border-solid border-black/20
+    ch:
+    - el: div
+      cls: center-frame-wide
+      ch:
+      - el: div
+        cls: flex
+        ch:
+        - el: div
+          cls: _nav
+          ch:
+          - el: div
+            cls: flex items-center gap-[3rem]
+            TEXT__: Stay Informed
+            ch:
+            - el: div
+              cls: -with-children
+              ch:
+              - el: div
+                cls: -sub-menu
+                ch:
+                - el: div
+                  ch:
+                  - el: div
+                    TEXT__: Reference Groups Working Groups
+        - el: div
+          cls: _mobile-menu-trigger
+          ch:
+          - el: div
+            cls: mobile-menu
+            ch:
+            - el: div
+              cls: -links center-frame-wide
+              ch:
+              - el: div
+                cls: flex flex-col mt-8 font-[23px] font-medium
+                ch:
+                - el: div
+                  cls: -children
+                  ch:
+                  - el: div
+                    cls: -expander
+                    ch:
+                    - el: div
+                      cls: -height
+                      ch:
+                      - el: div
+                        cls: -inner
+                        TEXT__: Reference Groups Working Groups
+              - el: div
+                cls: text-base font-medium leading-9 mt-9
+                ch:
+                - el: p
+                  TEXT__: "There\u2019s a fact that looms large in healthcare. An\
+                    \ inconvenient truth we have ignored - the less bullying, harassment,\
+                    \ racism and discrimination in our workplaces, the better the\
+                    \ culture AND the better the health outcomes for staff and patients."
+  - el: section
+    cls: hero box-border z-10 flex w-full overflow-hidden bg-white md:items-start
+      pt-4 md:pt-0
+    ch:
+    - el: div
+      cls: center-frame-wide md:pt-11 is-home
+      ch:
+      - el: div
+        cls: flex flex-col-reverse gap-5 lg:flex-row
+        ch:
+        - el: div
+          cls: -text flex flex-col justify-center flex-1 basis-2/3
+          ch:
+          - el: h2
+            cls: max-w-[43rem] pt-[1rem] text-base md:text-lg md:leading-8 np-cover-text
+            ch:
+            - el: p
+              TEXT__: "There\u2019s a fact that looms large in healthcare. An inconvenient\
+                \ truth we have ignored - the less bullying, harassment, racism and\
+                \ discrimination in our workplaces, the better the culture AND the\
+                \ better the health outcomes for staff and patients."
+      - el: div
+        cls: phase-2-link-bar
+        ch:
+        - el: div
+          cls: -bar
+          TEXT__: See our reports
+          ch:
+          - el: div
+            cls: -text
+            ch:
+            - el: h3
+              TEXT__: Reports and a national strategy proposal now available
+  - el: div
+    cls: overflow-hidden
+    ch:
+    - el: section
+      cls: duo-split-img-and-text --theme-visibility
+      ch:
+      - el: div
+        cls: -text
+        ch:
+        - el: div
+          cls: section-header-block
+          ch:
+          - el: h2
+            cls: section-header
+            TEXT__: The why What the Medical Training Survey Found
+        - el: div
+          cls: max-w-xl mt-8 text-base md:text-xl md:leading-[35px]
+          ch:
+          - el: p
+            TEXT__: "More than half of doctors in training responded to the 2024 Medical\_\
+              Training Survey, with 24,812 responses collected."
+        - el: div
+          cls: -grid font-semibold sm:mt-8 xl:mt-16
+          ch:
+          - el: div
+            cls: -cell md:max-w-xs order-1 md:order-1
+            TEXT__: 32% of trainees experienced or witnessed bullying, harassment,
+              discrimination or racism
+          - el: div
+            cls: -cell md:max-w-xs order-3 md:order-2
+            TEXT__: 74% of those who experienced or witnessed BHDR did not report
+              the incidents
+          - el: div
+            cls: -cell md:max-w-xs order-2 md:order-3
+            TEXT__: 38% of Aboriginal and Torres Strait Islanders trainees experienced
+              or witnessed racism in the workplace; compared to 17% of other trainees
+          - el: div
+            cls: -cell md:max-w-xs order-4 md:order-4
+            TEXT__: 19% of respondents said they were considering a future outside
+              of medicine
+    - el: section
+      cls: hp-symbol box-border --theme-visibility
+      ch:
+      - el: div
+        cls: center-frame-wide py-16 md:py-28 2xl:py-44
+        ch:
+        - el: div
+          cls: section-header-block
+          ch:
+          - el: h2
+            cls: section-header
+            TEXT__: The what A symbol of change
+        - el: div
+          cls: flex flex-col gap-8 md:flex-row
+          ch:
+          - el: div
+            cls: flex-none basis-1/2
+            ch:
+            - el: div
+              cls: content
+              ch:
+              - el: ul
+                ch:
+                - el: li
+                  TEXT__: "about individual \u201CResilience\u201D and \u201CWellbeing\u201D"
+          - el: div
+            cls: flex-none basis-1/2
+            ch:
+            - el: div
+              cls: content
+              ch:
+              - el: ul
+                ch:
+                - el: li
+                  TEXT__: focus on occupational health and safety, especially psychological
+                    safety
+                - el: li
+                  TEXT__: emphasis on drivers, enablers and perpetuators of adverse
+                    workplace culture
+    - el: section
+      cls: hp-focus box-border bg-[#F8F8F8] flex items-center --theme-visibility
+      ch:
+      - el: div
+        cls: center-frame-wide py-16 md:py-28 2xl:py-44
+        ch:
+        - el: div
+          cls: section-header-block
+          ch:
+          - el: h2
+            cls: section-header
+            TEXT__: The what Our Values
+        - el: div
+          cls: flex flex-wrap gap-6 md:gap-10 text-base font-medium md:text-focus
+          ch:
+          - el: div
+            cls: flex-auto basis-full md:basis-focus box-border bg-white shadow-focus
+              p-6.5 pb-12 lg:pb-24 min-w-focus
+            ch:
+            - el: div
+              cls: flex mb-8 text-[4.375rem] font-bold
+              TEXT__: '1'
+            - el: div
+              TEXT__: 'Inclusive: We welcome all healthcare workers.'
+          - el: div
+            cls: flex-auto basis-full md:basis-focus box-border bg-white shadow-focus
+              p-6.5 pb-12 lg:pb-24 min-w-focus
+            ch:
+            - el: div
+              cls: flex mb-8 text-[4.375rem] font-bold
+              TEXT__: '2'
+            - el: div
+              TEXT__: 'Collective: Multidisciplinary input is required, always.'
+          - el: div
+            cls: flex-auto basis-full md:basis-focus box-border bg-white shadow-focus
+              p-6.5 pb-12 lg:pb-24 min-w-focus
+            ch:
+            - el: div
+              cls: flex mb-8 text-[4.375rem] font-bold
+              TEXT__: '3'
+            - el: div
+              TEXT__: 'Positive: We believe change will happen.'
+          - el: div
+            cls: flex-auto basis-full md:basis-focus box-border bg-white shadow-focus
+              p-6.5 pb-12 lg:pb-24 min-w-focus
+            ch:
+            - el: div
+              cls: flex mb-8 text-[4.375rem] font-bold
+              TEXT__: '4'
+            - el: div
+              TEXT__: 'Respectful: Only equals can share respect. We are all equals.'
+    - el: section
+      cls: section-engagement text-white bg-theme-dark-green --theme-visibility
+      ch:
+      - el: div
+        cls: center-frame-wide
+        ch:
+        - el: div
+          cls: section-header-block
+          ch:
+          - el: h2
+            cls: section-header
+            TEXT__: The how Engagement Structure
+        - el: div
+          cls: text-base mt-4 md:mt-14 max-w-[1100px] prose-p:leading-[1.8]
+          ch:
+          - el: p
+            TEXT__: The project is governed by two main bodies; the RACMA board that
+              is responsible for corporate governance and the Advisory Board responsible
+              for content governance. The Advisory Board comprises representation
+              from Colleges, peak health bodies, and subject matter experts in workplace
+              culture, discrimination and harassment. The project also has 12 reference
+              groups and 5 working groups. The reference groups act as vital consultation
+              bodies, offering grassroots-level information to support the working
+              groups and project team. Currently we have 12 reference groups with
+              151 members across all. The Working Groups supports the Advisory Board
+              via the provision of content expertise and implementation support across
+              the system
+        - el: div
+          cls: groups-diagram
+          ch:
+          - el: div
+            cls: -governance
+            ch:
+            - el: div
+              cls: -box-outer -content-governance
+              ch:
+              - el: h4
+                TEXT__: Content Governance
+              - el: div
+                cls: -box
+                ch:
+                - el: h5
+                  TEXT__: Advisory Board
+            - el: div
+              cls: -box-outer -corporate-governance
+              ch:
+              - el: h4
+                TEXT__: Corporate Governance
+              - el: div
+                cls: -box
+                ch:
+                - el: h5
+                  TEXT__: Royal Australasian College of Medical Administration
+          - el: div
+            cls: -mobile-view-togglers
+            ch:
+            - el: div
+              cls: -toggle -current
+              ch:
+              - el: p
+                TEXT__: Reference Groups
+            - el: div
+              cls: -toggle
+              ch:
+              - el: p
+                TEXT__: Working Groups
+          - el: div
+            cls: -groups
+            ch:
+            - el: div
+              cls: -reference-groups -mobile-showing
+              ch:
+              - el: div
+                cls: -title
+                ch:
+                - el: h4
+                  TEXT__: Reference Groups
+              - el: div
+                cls: groups-grid
+                ch:
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '1.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Aboriginal & Torres Strait Islander
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '2.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Culturally and Linguistically Diverse
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '3.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Disability & Neurodiversity
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '4.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: International Medical Graduate
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '5.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: LGBTQIA+SB
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '6.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Non-Hospital
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '7.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Rural
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '8.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Senior Doctors and Healthcare Workers
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '9.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Students and Early Career (PGY1-3)
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '10.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Supervisors and Educators
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '11.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Trainees
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '12.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Women in Healthcare
+                - el: div
+                  cls: -footer
+                  ch:
+                  - el: p
+                    TEXT__: Lived Experience and Allies
+            - el: div
+              cls: -working-groups
+              ch:
+              - el: div
+                cls: -title
+                ch:
+                - el: h4
+                  TEXT__: Working Groups
+              - el: div
+                cls: groups-grid
+                ch:
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '1.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Cultural Safety
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '2.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Leadership Diversity
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '3.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Individual Level Interventions and Reporting Pathways
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '4.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Workplace Behaviour Expectations
+                - el: div
+                  cls: -group
+                  ch:
+                  - el: div
+                    cls: -number
+                    TEXT__: '5.'
+                  - el: div
+                    cls: -group-title
+                    TEXT__: Curriculum Design
+                - el: div
+                  cls: -footer
+                  ch:
+                  - el: p
+                    TEXT__: Expertise and Representation
+    - el: section
+      cls: carousel-index --theme-visibility
+      ch:
+      - el: header
+        cls: center-frame
+        ch:
+        - el: div
+          cls: section-header-block mb-8 items-center
+          ch:
+          - el: h2
+            cls: section-header
+            TEXT__: Reports
+  - el: div
+    ch:
+    - el: section
+      cls: -green box-border
+      ch:
+      - el: div
+        cls: -main
+        ch:
+        - el: div
+          cls: center-frame-wide
+          ch:
+          - el: div
+            cls: flex flex-col py-24 lg:flex-row md:py-28 gap-12 md:gap-[3rem] lg:gap-36
+            ch:
+            - el: div
+              cls: flex flex-col flex-initial lg:flex-row md:gap-[2rem] lg:gap-12
+              ch:
+              - el: div
+                cls: flex flex-col justify-between flex-initial md:justify-start lg:justify-between
+                  md:flex-row lg:flex-col md:gap-[4rem] lg:gap-0
+                ch:
+                - el: div
+                  cls: footer-subscribe
+                  ch:
+                  - el: div
+                    cls: -intro
+                    ch:
+                    - el: h3
+                      TEXT__: Stay informed
+                    - el: p
+                      TEXT__: Sign up for all the latest news and updates
+            - el: div
+              cls: flex flex-col justify-between flex-initial
+              ch:
+              - el: div
+                cls: flex flex-col gap-12
+                ch:
+                - el: div
+                  cls: contact-cta
+                  ch:
+                  - el: h3
+                    TEXT__: Have a question?
+                  - el: p
+                    TEXT__: Get in touch and find out if we can assist you
+                  - el: div
+                    cls: flex flex-col gap-4 items-start
+                    TEXT__: Contact us
+                - el: div
+                  cls: footer-follow
+                  ch:
+                  - el: h3
+                    TEXT__: Follow us
+                - el: div
+                  cls: footer-share
+                  ch:
+                  - el: h3
+                    TEXT__: Spread the word and share
+                - el: div
+                  cls: footer-nav flex flex-col text-sm font-medium gap-7 text-theme-dark-green
+                  ch:
+                  - el: div
+                    cls: flex flex-wrap lg:flex-nowrap justify-between md:justify-start
+                      lg:justify-normal gap-[1.5rem] md:gap-10 text-footer-menu text-theme-dark-green
+                    TEXT__: About us Resources & News Contact us
+                  - el: div
+                    cls: hidden
+                    TEXT__: "\xA9 Copyright 2025 ABetterCulture Australia. All\_rights\_\
+                      reserved."
+      - el: div
+        cls: -legal-and-brightlabs
+        ch:
+        - el: div
+          cls: mx-auto
+          ch:
+          - el: div
+            cls: -legal
+            TEXT__: Terms & Conditions Privacy Policy
+          - el: div
+            cls: -brightlabs
+            TEXT__: Bright Labs
+    - el: section
+      cls: footer-acknowledgement box-border flex items-center justify-center bg-center
+        bg-no-repeat bg-cover bg-theme-green py-14 md:py-28 px-[1rem] md:px-0
+      ch:
+      - el: div
+        cls: bg-overlay-dark h-auto md:max-w-[825px] px-8 py-12 md:px-20 md:py-20
+          text-white text-center
+        ch:
+        - el: h3
+          cls: text-[25px] -mx-8 md:mx-0 md:text-35 text-bold
+          TEXT__: Acknowledgement of country
+        - el: p
+          cls: mt-6 leading-7 text-15 md:leading-9 md:mt-8
+          TEXT__: A Better Culture acknowledges and pays respect to the Traditional
+            Owners of the lands across Australia and extends gratitude for their contributions
+            to health and healing. We pay respect to Elders and ancestors past and
+            present and acknowledge that Sovereignty was never ceded.
+    - el: div
+      cls: p-12 text-center shadow-sl shadow-gray-500 backdrop-blur-sm
+      ch:
+      - el: h3
+        cls: mb-4 text-xl font-semibold
+        TEXT__: Copied!
+      - el: p
+        cls: font-medium
+        TEXT__: Link copied to you clipboard!
+      - el: p
+        TEXT__: Unfortunately, your browser doesn't support sharing feature

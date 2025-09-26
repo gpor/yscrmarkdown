@@ -10,7 +10,7 @@ async def node_to_dict(element):
                     "pre", "code", "blockquote",
                     # "hr", "br",
                     ]
-    js_file = Path("js/dom_walker.js")
+    js_file = Path("js/dom_walker2.js")
     js_code = js_file.read_text()
     dom = await element.evaluate(
         js_code,
