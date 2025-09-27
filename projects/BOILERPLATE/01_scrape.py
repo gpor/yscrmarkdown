@@ -1,11 +1,12 @@
 from lib.scrape import scrape_and_write_to_file
+from lib.find_internal_links import find_internal_links
 
 urls = [
-    "https://abetterculture.org.au/",
+    "https://xxx",
 ]
 
 chat_system_prompt = """
-You are an expert in answering questions about A Better Culture
+You are an expert in answering questions about Xxxx
 
 Here are some relevant frequently asked questions with answers:
 {retrieved_from_vector_db}
@@ -19,6 +20,12 @@ If the information is not sufficient, respond with 'Sorry, I do not have that in
 """
 
 async def main():
+    internal_links = await find_internal_links('https://xxx', max_depth=3, auth=('brightlabs', 'brightlabs'))
+    print(' ')
+    print(f"\nDiscovered {len(internal_links)} URLs:")
+    import json
+    print(json.dumps(list(internal_links), indent=4))
+    exit()
     await scrape_and_write_to_file(
         __name__,
         urls,
