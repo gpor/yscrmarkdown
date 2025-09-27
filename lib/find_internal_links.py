@@ -7,7 +7,8 @@ from lib.utils import basic_auth_header
 async def find_internal_links(
     start_url: str,
     max_depth: int = 2,
-    auth: tuple | None = None
+    auth: tuple | None = None,
+    exact_site: bool = True,
 ) -> set[str]:
     config = CrawlerRunConfig()
     browser_config = None
@@ -17,7 +18,10 @@ async def find_internal_links(
     
     visited = set()
     to_visit = [(start_url, 0)]
-    discovered = set()
+    discovered = set([start_url])
+
+    # Set root_netloc to the netloc of start_url
+    root_netloc = urllib.parse.urlparse(start_url).netloc
 
     async with AsyncWebCrawler(config=browser_config) as crawler:
         while to_visit:
@@ -41,21 +45,16 @@ async def find_internal_links(
             discovered.add(url)
 
             links = result.links or []
-            # pprint.pprint(links['internal'])
             for link in links['internal']:
                 if 'href' in link:
                     href = link['href']
                     parsed = urllib.parse.urlparse(href)
-
                     clean_link = parsed._replace(fragment="").geturl()
 
-                    # if not parsed.scheme.startswith("http"):
-                    #     print(f"  - Skipping non-http link: {href}")
-                    #     continue
-
-                    # if same_domain_only and parsed.netloc != root_netloc:
-                    #     print(f"  - Skipping external link: {href}")
-                    #     continue
+                    # Only allow exact netloc match (no subdomains)
+                    if exact_site and parsed.netloc != root_netloc:
+                        print(f"  - Skipping external or subdomain link: {href}")
+                        continue
                     
                     # skip pdf
                     if re.search(r'\.pdf$', parsed.path, re.IGNORECASE):
@@ -67,5 +66,5 @@ async def find_internal_links(
                 else:
                     print('link missing href:', link)
 
-    return discovered
+    return sorted(discovered)
 
