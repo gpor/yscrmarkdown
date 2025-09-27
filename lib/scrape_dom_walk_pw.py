@@ -5,12 +5,12 @@ from pathlib import Path
 async def node_to_dict(element):
     allowed_tags = ["body", "div", "main", "ul", "li",
                     "h1", "h2", "h3", "h4", "h5", "h6", "p",
-                    "section", "article", "header", "footer", "nav",
+                    "section", "article", "header", "footer",
                     "table", "thead", "tbody", "tr", "th", "td",
                     "pre", "code", "blockquote",
-                    # "hr", "br",
+                    # "hr", "br", "nav",
                     ]
-    js_file = Path("js/dom_walker2.js")
+    js_file = Path("js/dom_walker3.js")
     js_code = js_file.read_text()
     dom = await element.evaluate(
         js_code,
