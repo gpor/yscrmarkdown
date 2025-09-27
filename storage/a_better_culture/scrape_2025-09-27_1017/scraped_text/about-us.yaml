@@ -1,0 +1,400 @@
+el: body.ltr
+ch:
+- el: div
+  ch:
+  - el: div.top-menu.sticky.top-0.z-20.w-full.bg-white.border-b.border-solid.border-black/20
+    ch:
+    - el: div.center-frame-wide
+      ch:
+      - el: div.flex
+        ch:
+        - el: div.-logo
+        - el: div._nav
+          ch:
+          - el: div.flex.items-center.gap-[3rem]
+            TEXT_: Environmental Scan News & Resources Contact us Stay Informed
+            ch:
+            - el: div.-with-children
+              TEXT_: About Us
+              ch:
+              - el: div.-sub-menu
+                ch:
+                - el: div
+                  ch:
+                  - el: div
+                    TEXT_: Reference Groups Working Groups
+        - el: div._mobile-menu-trigger
+          ch:
+          - el: div.mobile-menu
+            ch:
+            - el: div.border-b.border-solid.border-white/20
+              ch:
+              - el: div.container.flex.items-center.justify-between.py-4.mx-auto.md:px-20
+            - el: div.-links.center-frame-wide
+              ch:
+              - el: div.flex.flex-col.mt-8.font-[23px].font-medium
+                TEXT_: About Us Environmental Scan News & Resources Contact us
+                ch:
+                - el: div.-children
+                  ch:
+                  - el: div.-expander
+                    ch:
+                    - el: div.-height
+                      ch:
+                      - el: div.-inner
+                        TEXT_: Reference Groups Working Groups
+  - el: div.popup
+    ch:
+    - el: div.popup-content
+      ch:
+      - el: div.-form
+  - el: section.hero.pb-[2rem].md:pb-[4rem].lg:pb-[7rem]
+    ch:
+    - el: div.center-frame-wide
+      ch:
+      - el: div.md:px-20
+        ch:
+        - el: h1.pt-4.pb-8.mt-8.font-serif.text-2xl.text-center.md:text-title-huge.md:leading-none.text-theme-primary.md:text-left.md:mt-12.md:pt-11.md:pb-16
+          TEXT_: "Welcome to\_ A Better Culture"
+        - el: div.flex.flex-col-reverse.gap-6.md:flex-row.md:gap-12
+          ch:
+          - el: div.flex-initial
+            ch:
+            - el: div.text-base.md:text-xl.md:leading-[35px]
+              ch:
+              - el: p
+                TEXT_: "A Better Culture is a coalition of health professionals who\
+                  \ know that working in healthcare does not have to be traumatising.\
+                  \ Who know that we can make things better. We can choose to eliminate\
+                  \ bullying, to stamp out all forms of harassment, to have zero tolerance\
+                  \ for racism, and to wipe discrimination off the face of the profession.\
+                  \ We know that we can build  # ABetterCulture.\_"
+            - el: div.mt-8.mb-8.font-serif.md:mt-12
+              ch:
+              - el: p.text-lg.md:text-[32px].mb-4
+                TEXT_: Dr Jillann Farmer
+              - el: p.mb-4.text-base.md:text-xl
+                TEXT_: Chief Executive Officer
+          - el: div.flex-none.basis-1/3
+            ch:
+            - el: div.person-photo.w-full
+  - el: div.overflow-hidden
+    ch:
+    - el: section.box-border.min-h-theme.bg-theme-grey.--theme-visibility
+      ch:
+      - el: div.center-frame-wide
+        ch:
+        - el: div.flex.flex-col-reverse.md:flex-row.md:gap-16.md:px-20.min-h-theme.justify-stretch
+          ch:
+          - el: div.flex.flex-col.justify-center.flex-auto.pt-16.md:basis-5/12.pb-[4rem].md:pb-0
+            ch:
+            - el: div.flex.flex-col.gap-5.md:flex-row.md:items-center.md:mb-14
+              ch:
+              - el: h2.section-header
+                TEXT_: ' The Why '
+            - el: div.text-base.md:text-xl.md:leading-[35px]
+              ch:
+              - el: p
+                TEXT_: "Because none of these things have a place in a culture that\
+                  \ is supposed to be about caring. Healthcare workers who are exhausted\
+                  \ from the constant onslaught of bullying or from the oppressive\
+                  \ weight of racism, can\u2019t do their best work. Some of them\
+                  \ leave \u2013 sometimes for a while, sometimes forever. And discrimination\
+                  \ means that we don\u2019t have a merit-based system \u2013 we aren\u2019\
+                  t ensuring that the best people do the work they are most suited\
+                  \ for. Building #ABetterCulture will mean we build Better Healthcare.\
+                  \ And that\u2019s for everyone\u2019s benefit."
+            - el: div.flex
+              ch:
+              - el: div.flex-none.basis-1/2
+                ch:
+                - el: div.less
+              - el: div.flex-none.basis-1/2
+                ch:
+                - el: div.more
+          - el: div.flex-none.bg-left.md:basis-7/12.h-50.mobile-full-container.md:h-auto.md:-mr-36.md:ml-0.image-block
+    - el: section.dark-section.box-border.flex.items-center.text-white.bg-theme-dark-green.--theme-visibility
+      ch:
+      - el: div.center-frame.py-16.mx-auto.md:pt-28.md:pb-[3rem].2xl:pt-44.2xl:pb-[6.75rem]
+        ch:
+        - el: div.items-center.section-header-block
+          ch:
+          - el: h2.section-header
+            TEXT_: ' What Makes A Better Culture Different? '
+        - el: div.text-base.mt-4.md:mt-14.md:mb-14.max-w-[1100px].prose-p:leading-[35px].md:text-[20px].font-normal
+          ch:
+          - el: p
+            TEXT_: "We are taking a different approach to creating a safer, more effective\
+              \ workplace. We are challenging the system, and those who drive it,\
+              \ to provide safety to the people in it.\_But it will take all parts\
+              \ of the health system to create lasting change.\_"
+          - el: p
+          - el: p
+            TEXT_: "This is an invitation to everyone - Doctors, Nurses, Midwives\
+              \ and Allied Health workers, to be a part of creating psychological\
+              \ safety in a system and culture that currently undermines it.\_"
+          - el: p
+          - el: p
+            TEXT_: Healthcare must be accountable as a workplace.  It must be safe  first
+              and foremost, then better outcomes for staff and patients will follow.
+    - el: div.people-grids.--theme-visibility
+      ch:
+      - el: div.center-frame-wide
+        ch:
+        - el: h2
+          TEXT_: The Team
+        - el: div.people-grid
+          ch:
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Komal Daredia
+              - el: h4.-position
+                TEXT_: Project Manager
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Dr Sarah Jane Springer
+              - el: h4.-position
+                TEXT_: Senior Medical Advisor
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Jade Rameka
+              - el: h4.-position
+                TEXT_: Project Admin
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Maddy Roberts
+              - el: h4.-position
+                TEXT_: Project Admin
+            - el: div.-button
+              TEXT_: Read Bio
+      - el: div.center-frame-wide
+        ch:
+        - el: h2
+          TEXT_: The Board
+        - el: div.people-grid
+          ch:
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Dr Jillann Farmer
+              - el: h4.-position
+                TEXT_: Our CEO
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Ms Helen Szoke AO
+              - el: h4.-position
+                TEXT_: Our Chair
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Dr Louis Peachey
+              - el: h4.-position
+                TEXT_: Aboriginal and Torres Strait Islander Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Dr Nicole Higgins
+              - el: h4.-position
+                TEXT_: CPMC Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Dr Karen Stringer
+              - el: h4.-position
+                TEXT_: Independent Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Carly Dober
+              - el: h4.-position
+                TEXT_: Australian Association of Psychologists Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: David Clarke
+              - el: h4.-position
+                TEXT_: Health Consumer Body Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Judy Finn
+              - el: h4.-position
+                TEXT_: Independent Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Dr Elise Buisson
+              - el: h4.-position
+                TEXT_: AMADT Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Karen Grace
+              - el: h4.-position
+                TEXT_: Nursing and Midwifery Member
+            - el: div.-button
+              TEXT_: Read Bio
+          - el: div.-person
+            ch:
+            - el: div.-photo
+            - el: article
+              ch:
+              - el: h3.-full-name
+                TEXT_: Dr Clare Skinner
+              - el: h4.-position
+                TEXT_: CPMC Member
+            - el: div.-button
+              TEXT_: Read Bio
+  - el: div
+    ch:
+    - el: section.-green.box-border
+      ch:
+      - el: div.-main
+        ch:
+        - el: div.center-frame-wide
+          ch:
+          - el: div.flex.flex-col.py-24.lg:flex-row.md:py-28.gap-12.md:gap-[3rem].lg:gap-36
+            ch:
+            - el: div.flex.flex-col.flex-initial.lg:flex-row.md:gap-[2rem].lg:gap-12
+              ch:
+              - el: div.flex-none
+              - el: div.flex.flex-col.justify-between.flex-initial.md:justify-start.lg:justify-between.md:flex-row.lg:flex-col.md:gap-[4rem].lg:gap-0
+                ch:
+                - el: div.footer-subscribe
+                  ch:
+                  - el: div.-intro
+                    ch:
+                    - el: h3
+                      TEXT_: Stay informed
+                    - el: p
+                      TEXT_: Sign up for all the latest news and updates
+            - el: div.flex.flex-col.justify-between.flex-initial
+              ch:
+              - el: div.flex.flex-col.gap-12
+                ch:
+                - el: div.contact-cta
+                  ch:
+                  - el: h3
+                    TEXT_: Have a question?
+                  - el: p
+                    TEXT_: Get in touch and find out if we can assist you
+                  - el: div.flex.flex-col.gap-4.items-start
+                    TEXT_: Contact us
+                - el: div.footer-follow
+                  ch:
+                  - el: h3
+                    TEXT_: Follow us
+                  - el: div.flex.social-pages.gap-icons
+                - el: div.footer-share
+                  ch:
+                  - el: h3
+                    TEXT_: Spread the word and share
+                  - el: div.flex.gap-icons
+                    ch:
+                    - {}
+                - el: div.footer-nav.flex.flex-col.text-sm.font-medium.gap-7.text-theme-dark-green
+                  ch:
+                  - el: div.flex.flex-wrap.lg:flex-nowrap.justify-between.md:justify-start.lg:justify-normal.gap-[1.5rem].md:gap-10.text-footer-menu.text-theme-dark-green
+                    TEXT_: About us Resources & News Contact us
+                  - el: div.hidden
+                    TEXT_: " \xA9 Copyright 2025 ABetterCulture Australia. All\_rights\_\
+                      reserved. "
+      - el: div.-legal-and-brightlabs
+        ch:
+        - el: div.mx-auto
+          ch:
+          - el: div.-legal
+            TEXT_: Terms & Conditions Privacy Policy
+          - el: div.-brightlabs
+            TEXT_: Bright Labs
+    - el: section.footer-acknowledgement.box-border.flex.items-center.justify-center.bg-center.bg-no-repeat.bg-cover.bg-theme-green.py-14.md:py-28.px-[1rem].md:px-0
+      ch:
+      - el: div.bg-overlay-dark.h-auto.md:max-w-[825px].px-8.py-12.md:px-20.md:py-20.text-white.text-center
+        ch:
+        - el: h3.text-[25px].-mx-8.md:mx-0.md:text-35.text-bold
+          TEXT_: Acknowledgement of country
+        - el: p.mt-6.leading-7.text-15.md:leading-9.md:mt-8
+          TEXT_: ' A Better Culture acknowledges and pays respect to the Traditional
+            Owners of the lands across Australia and extends gratitude for their contributions
+            to health and healing. We pay respect to Elders and ancestors past and
+            present and acknowledge that Sovereignty was never ceded. '
+    - el: div.p-12.text-center.shadow-sl.shadow-gray-500.backdrop-blur-sm
+      ch:
+      - el: h3.mb-4.text-xl.font-semibold
+        TEXT_: Copied!
+      - el: p.font-medium
+        TEXT_: Link copied to you clipboard!
+      - el: p
+        TEXT_: Unfortunately, your browser doesn't support sharing feature
+  - el: div.unknown.fixed.right-0.flex.flex-col.gap-[1rem].px-3.py-4.text-gray-500.bg-black.md:gap-[1.1rem].top-2/3.md:top-1/3.md:py-[1.15rem].md:px-[0.8rem]

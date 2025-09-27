@@ -27,6 +27,7 @@ async def scrape_and_write_to_file(
         if output_text is not None:
             output_file = scrape.scraped_text_dir / url_to_filename(url, output_format)
             output_file.parent.mkdir(parents=True, exist_ok=True)
+            # if output_format == 'yaml' then keep property order
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(output_text)
             print(f" saved in {output_file}")
