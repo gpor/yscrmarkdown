@@ -12,7 +12,7 @@ async def scrape_and_write_to_file(
 
     if output_format == 'json' or output_format == 'yaml':
         from lib.scrape_dom_walk_pw import Url_iterator_pw
-        url_iterator = Url_iterator_pw(urls, output_format)
+        url_iterator = Url_iterator_pw(urls, output_format, auth)
     else:
         from lib.scrape_crawl4ai import Url_iterator
         url_iterator = Url_iterator(urls, output_format, auth)
