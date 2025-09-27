@@ -8,7 +8,8 @@
     const textParts = []
     const childrenElements = []
     if (node.nodeType === Node.TEXT_NODE) {
-      return node.nodeValue || null
+      const text = node.nodeValue.trim()
+      return text ? text : null
     } else if (node.nodeType === Node.ELEMENT_NODE) {
       element.el = node.tagName.toLowerCase()
       if (!allow.has(element.el) && !inline.has(element.el)) {
@@ -39,7 +40,9 @@
     if (classes.length) {
       element.el = [element.el, ...classes].join('.')
     }
-    return element
+    return ('TEXT_' in element || 'ch' in element)
+      ? element
+      : null
   }
   return walk(el)
 }
