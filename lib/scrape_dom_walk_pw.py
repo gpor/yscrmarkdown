@@ -22,7 +22,11 @@ async def walk_dom(url):
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page()
-        await page.goto(url)
+        response = await page.goto(url)
+        status = response.status if response else None
+        if status != 200:
+            await browser.close()
+            return {"status": status}
         body = await page.query_selector("body")
         dom = await node_to_dict(body)
         await browser.close()
@@ -36,23 +40,11 @@ class Url_iterator_pw:
     async def crawl(self):
         for url in self.urls:
             dom = await walk_dom(url)
-            if self.output_format == 'yaml':
+            if isinstance(dom, dict) and "status" in dom:
+                output_text = f"HTTP status: {dom['status']}"
+            elif self.output_format == 'yaml':
                 import yaml
                 output_text = yaml.dump(dom, sort_keys=False)
             else:
                 output_text = json.dumps(dom, indent=2)
             yield url, output_text
-            
-
-
-
-# async def scrape_dom_walk_pw(urls):
-#     results = {}
-#     for url in urls:
-#         print(f"Scraping {url}...")
-#         dom = await walk_dom(url)
-#         results[url] = dom
-#         print(f"Done scraping {url}.")
-#     print('results:')
-#     pprint.pprint(results)
-#     return results
