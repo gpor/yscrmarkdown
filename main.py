@@ -13,11 +13,12 @@ def get_projects_dirs(PROJECTS_DIR):
 
 def get_scripts(PROJECTS_DIR):
     scripts = []
-    for project_dir in get_projects_dirs(PROJECTS_DIR):
+    project_dirs = get_projects_dirs(PROJECTS_DIR)
+    for project_dir in project_dirs:
         for file in project_dir.iterdir():
             if file.suffix == '.py' and not file.name.startswith('__'):
                 scripts.append(file)
-    return [f"{project_dir.name}/{f.name}" for f in sorted(scripts, key=lambda f: f.stat().st_mtime, reverse=True)]
+    return [f"{f.parent.name}/{f.name}" for f in sorted(scripts, key=lambda f: f.stat().st_mtime, reverse=True)]
 
 def run_selected_script(PROJECTS_DIR, filename):
     script_path = PROJECTS_DIR / filename
