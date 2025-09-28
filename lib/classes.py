@@ -67,6 +67,7 @@ class Scrape:
     directory: Path = field(init=False)
     csv_path: Path = field(init=False)
     scraped_text_dir: Path = field(init=False)
+    chunked_text_dir: Path = field(init=False)
     embedding_model_flag_file_path: Path = field(init=False)
     is_canon: bool
     def __post_init__(self):
@@ -74,5 +75,6 @@ class Scrape:
         self.directory = Path(parent_dir) / self.name
         self.csv_path = self.directory / 'scrape.csv'
         self.scraped_text_dir = self.directory / 'scraped_text'
+        self.chunked_text_dir = self.directory / 'chunked_text'
         self.embedding_model_flag_file_path = self.directory / 'embedding_model_flag.txt'
 

@@ -16,9 +16,9 @@ class FileProcessor:
         }
 
     def process_element(self, el):
-        # print(el['el'])
         tag = el['el'].split('.')[0]
         heading_level = int(tag[1]) if tag.startswith('h') and len(tag) > 1 and tag[1].isdigit() else 0
+        output = []
         if heading_level != 0:
             if 'TEXT_' in el:
                 self.current_headings[heading_level] = el['TEXT_']
@@ -28,10 +28,13 @@ class FileProcessor:
                 print(f"NO TEXT FOR HEADING {heading_level}")
         elif 'TEXT_' in el:
             headings = []
-            # loop from 1 to 6 and append each text to headings
             for i in range(1, 7):
                 if self.current_headings[i]:
                     headings.append(self.current_headings[i])
+            output.append({
+                "headings": headings,
+                "text": el['TEXT_']
+            })
             print(' > '.join(headings))
             print('------')
             print(el['TEXT_'])
@@ -40,6 +43,8 @@ class FileProcessor:
         if 'ch' in el and el['ch']:
             for child in el['ch']:
                 self.process_element(child)
+        
+        return output
 
 
 
@@ -62,7 +67,10 @@ def process_scraped_text(scrape: Scrape):
                 continue
         # pprint.pprint(data)
         file_processor = FileProcessor()
-        file_processor.process_element(data['body'])
+        chunks = file_processor.process_element(data['body'])
+        # save chunks to scrape.chunked_text_dir
+        
+            
         
         
         
