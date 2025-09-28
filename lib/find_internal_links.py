@@ -1,5 +1,5 @@
 import re
-# import pprint
+import pprint
 import urllib.parse
 from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, BrowserConfig
 from lib.utils import basic_auth_header
@@ -44,8 +44,16 @@ async def find_internal_links(
 
             discovered.add(url)
 
-            links = result.links or []
-            for link in links['internal']:
+            all_links = []
+            links = getattr(result, 'links', None)
+            if isinstance(links, dict):
+                all_links.extend(links.get('internal', []))
+                all_links.extend(links.get('external', []))
+            elif isinstance(links, list):
+                all_links.extend(links)
+            else:
+                print("Unexpected format for result.links:", links)
+            for link in all_links:
                 if 'href' in link:
                     href = link['href']
                     parsed = urllib.parse.urlparse(href)
@@ -53,7 +61,7 @@ async def find_internal_links(
 
                     # Only allow exact netloc match (no subdomains)
                     if exact_site and parsed.netloc != root_netloc:
-                        print(f"  - Skipping external or subdomain link: {href}")
+                        print(f"  - Skipping non-matched domain: {href}")
                         continue
                     
                     # skip pdf
