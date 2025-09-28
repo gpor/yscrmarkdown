@@ -27,4 +27,5 @@ async def main():
         # 'html',
         'yaml',
         # 'json',
+        js_walker="bl_site",
     )

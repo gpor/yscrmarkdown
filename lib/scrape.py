@@ -18,8 +18,8 @@ async def scrape_and_write_to_file(
         from lib.scrape_crawl4ai import Url_iterator
         url_iterator = Url_iterator(urls, output_format, auth)
         
-    if not project.directory.exists():
-        project.directory.mkdir(parents=True, exist_ok=True)
+    if not project.temp_directory.exists():
+        project.temp_directory.mkdir(parents=True, exist_ok=True)
 
     project.write_config(chat_system_prompt=chat_system_prompt.strip(), output_format=output_format)
     scrape = project.new_scrape()
