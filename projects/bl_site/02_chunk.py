@@ -40,7 +40,7 @@ class FileProcessor:
         if 'ch' in el and el['ch']:
             for child in el['ch']:
                 self.process_element(child)
-        
+
 
 
 def process_scraped_text(scrape: Scrape):
@@ -87,8 +87,7 @@ async def main():
     print('Selected scrape directory:', user_selection['scrape_dir'])
     
     if user_selection and user_selection['scrape_dir']:
-        scrape = Scrape(project=project, name=user_selection['scrape_dir'])
-        # print('scrape.scraped_text_dir:', scrape.scraped_text_dir)
+        scrape = project.find_selected_scrape(user_selection['scrape_dir'])
         process_scraped_text(scrape)
     else:
         print("No scrape directory selected. Exiting.")

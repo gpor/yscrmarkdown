@@ -28,12 +28,14 @@ def url_to_filename(url: str, ext: str) -> str:
     return f"{safe}.{ext}"
 
 
-def get_dirs(parent_dir:Path) -> list[Path]:
+def get_dirs(parent_dir: Path, extra_dir_path: Path = None) -> list[Path]:
     try:
         items = parent_dir.iterdir()
         subdirectories = [
             item for item in items if item.is_dir()
         ]
+        if extra_dir_path and extra_dir_path.exists():
+            subdirectories.append(extra_dir_path)
         return sorted(subdirectories, key=lambda f: f.stat().st_mtime, reverse=True)
     except FileNotFoundError:
         print(f"Directory '{parent_dir}' not found.")
