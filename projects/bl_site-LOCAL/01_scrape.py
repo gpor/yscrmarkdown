@@ -1,0 +1,175 @@
+from lib.scrape import scrape_and_write_to_file
+from lib.find_internal_links import find_internal_links
+
+urls = [
+    # "https://brightlabs.staging.brightlabs.com.au/",
+    # "https://brightlabs.staging.brightlabs.com.au/L8%2C%20607%20Bourke%20St%2C%20Melbourne%20VIC%203000",
+    
+    # "https://brightlabs.staging.brightlabs.com.au/careers",
+    # "https://brightlabs.staging.brightlabs.com.au/contact",
+    # "https://brightlabs.staging.brightlabs.com.au/industries",
+    
+    # "https://brightlabs.staging.brightlabs.com.au/about",
+
+    # "https://brightlabs.staging.brightlabs.com.au/about/rishad-sukhia",
+    # "https://brightlabs.staging.brightlabs.com.au/about/susan-douglass",
+    # "https://brightlabs.staging.brightlabs.com.au/about/tim-mcdougall",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/education",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/financial-services",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/government",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/hardware-manufacturing",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/health-aged-care",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/legal",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/lifestyle-luxury",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/non-profit",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/professional-services",
+    # "https://brightlabs.staging.brightlabs.com.au/industries/technology-media",
+    # "https://brightlabs.staging.brightlabs.com.au/insights",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/15-ux-tips-supercharge-your-ecommerce",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/7-common-seo-mistakes-our-agency-finds-on-business-websites",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/advertising-to-emotions-in-content-marketing",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/are-electronic-signatures-legally-binding",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/auspost-oria-best-b2b-retailer-award",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/big-data-big-deal",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/biggest-linkedin-ad-mistakes",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/brand-engagement-digital-agency",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/choosing-digital-agency",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/click-wrap-agreements",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/connecting-using-youtube-gen-c",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/content",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/content?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/creative",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/creative?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/cross-channel-digital-strategy",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/customer-journey-mapping",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/digital-agency-for-the-future",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/digital-grants-incentives",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/digital-marketing-agencies-australia",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/digital-transformation",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/digital-transformation-government-grants-and-incentives",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/geofencing",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/gtld-top-level-domain",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/hyper-connected-digital-lifestyle",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/industries",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/industries?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/january-google-core-update",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/mobile-checkout-ecommerce",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/new-logo-new-bright-labs",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/new-website-seo-strategy",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/news-events",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/news-events?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/not-secure-warning-google-chrome",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/optimising-google-ads",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/performance-marketing",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/performance-marketing?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/personalisation-future-of-web",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/platforms-partnerships",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/platforms-partnerships?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/remarketing-guide",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/scrum-methodology-in-web-development",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/service-design-ux-design-cx-design",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/sharepoint-intranet-solution",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/social-influencer-marketing",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/supercharge-your-google-ads-performance",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/technology",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/technology?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/the-secret-sauce-to-making-content-go-viral",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/top-22-website-seo-and-ppc-trends-of-2021",
+    # "https://brightlabs.staging.brightlabs.com.au/insights/write-articles-that-generate-traffic",
+    # "https://brightlabs.staging.brightlabs.com.au/insights?limit=18",
+    # "https://brightlabs.staging.brightlabs.com.au/insights?limit=27",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/campaign-monitor",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/craft-cms",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/epicor",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/google-cloud",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/google-partner",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/hubspot",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/meta-marketing-partner",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/microsoft-dynamics-365",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/microsoft-sharepoint",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/runcloud",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/salesforce",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/sap",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/sap-success-factors",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/shopify",
+    # "https://brightlabs.staging.brightlabs.com.au/platforms-solutions/wordpress",
+    # "https://brightlabs.staging.brightlabs.com.au/privacy",
+    # "https://brightlabs.staging.brightlabs.com.au/services",
+    # "https://brightlabs.staging.brightlabs.com.au/services/brand-strategy-and-design",
+    # "https://brightlabs.staging.brightlabs.com.au/services/campaign-creative",
+    # "https://brightlabs.staging.brightlabs.com.au/services/consultation",
+    "http://localhost:3040/services/content-strategy",
+    "http://localhost:3040/services/copywriting",
+    # "https://brightlabs.staging.brightlabs.com.au/services/crm-erp-integration",
+    # "https://brightlabs.staging.brightlabs.com.au/services/custom-platform-app-development",
+    # "https://brightlabs.staging.brightlabs.com.au/services/customer-experience",
+    # "https://brightlabs.staging.brightlabs.com.au/services/ecommerce",
+    # "https://brightlabs.staging.brightlabs.com.au/services/managed-services",
+    # "http://localhost:3040/services/pay-per-click",
+    # "https://brightlabs.staging.brightlabs.com.au/services/print-advertising",
+    # "http://localhost:3040/services/search-engine-optimisation",
+    # "http://localhost:3040/services/social-media-advertising",
+    # "https://brightlabs.staging.brightlabs.com.au/services/social-media-management",
+    # "https://brightlabs.staging.brightlabs.com.au/services/ui-ux-design",
+    # "https://brightlabs.staging.brightlabs.com.au/services/video-production",
+    # "https://brightlabs.staging.brightlabs.com.au/services/websites",
+    # "https://brightlabs.staging.brightlabs.com.au/terms-of-use",
+    # "https://brightlabs.staging.brightlabs.com.au/work",
+    # "https://brightlabs.staging.brightlabs.com.au/work/%C3%A0esthetica",
+    # "https://brightlabs.staging.brightlabs.com.au/work/abey-australia",
+    # "https://brightlabs.staging.brightlabs.com.au/work/alba-thermal-springs",
+    # "https://brightlabs.staging.brightlabs.com.au/work/alba-thermal-springs-and-spa",
+    # "https://brightlabs.staging.brightlabs.com.au/work/clickview",
+    # "https://brightlabs.staging.brightlabs.com.au/work/deadly-story",
+    # "https://brightlabs.staging.brightlabs.com.au/work/education",
+    # "https://brightlabs.staging.brightlabs.com.au/work/entain",
+    # "https://brightlabs.staging.brightlabs.com.au/work/ewon",
+    # "https://brightlabs.staging.brightlabs.com.au/work/financial-services",
+    # "https://brightlabs.staging.brightlabs.com.au/work/focus-dynamics-group",
+    # "https://brightlabs.staging.brightlabs.com.au/work/government",
+    # "https://brightlabs.staging.brightlabs.com.au/work/hardware-manufacturing",
+    # "https://brightlabs.staging.brightlabs.com.au/work/health-aged-care",
+    # "https://brightlabs.staging.brightlabs.com.au/work/iccons",
+    # "https://brightlabs.staging.brightlabs.com.au/work/kilikanoon-wines",
+    # "https://brightlabs.staging.brightlabs.com.au/work/legal",
+    # "https://brightlabs.staging.brightlabs.com.au/work/life-saving-victoria",
+    # "https://brightlabs.staging.brightlabs.com.au/work/lifestyle-luxury",
+    # "https://brightlabs.staging.brightlabs.com.au/work/non-profit",
+    # "https://brightlabs.staging.brightlabs.com.au/work/professional-services",
+    # "https://brightlabs.staging.brightlabs.com.au/work/technology-media",
+    # "https://brightlabs.staging.brightlabs.com.au/work/united-fasteners",
+    # "https://brightlabs.staging.brightlabs.com.au/work/vacca",
+    # "https://brightlabs.staging.brightlabs.com.au/work/vetafarm"
+]
+
+chat_system_prompt = """
+You are an expert in answering questions about Bright Labs Digital Agency
+
+Here are some relevant frequently asked questions with answers:
+{retrieved_from_vector_db}
+
+Here is the question to answer:
+{question}
+
+Use the above information to provide an accurate answer and also provide the metadata IDs from the most relevant documents.
+
+If the information is not sufficient, respond with 'Sorry, I do not have that information /no_think'.
+"""
+
+async def main():
+    # internal_links = await find_internal_links('https://brightlabs.staging.brightlabs.com.au/', max_depth=3, auth=('brightlabs', 'brightlabs'))
+    # print(' ')
+    # print(f"\nDiscovered {len(internal_links)} URLs:")
+    # import json
+    # print(json.dumps(list(internal_links), indent=4))
+    # exit()
+    await scrape_and_write_to_file(
+        __name__.split('.')[0],
+        urls,
+        chat_system_prompt,
+        # 'html',
+        'yaml',
+        # 'json',
+        # auth=('brightlabs', 'brightlabs')
+    )
