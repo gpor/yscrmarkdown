@@ -2,9 +2,11 @@ from lib.classes import Project, Scrape
 import inquirer
 import yaml
 import pprint
+import os
 
 class FileProcessor:
     def __init__(self):
+        self.chunks = []
         self.paragraphs = []
         self.current_headings = {
             1: None,
@@ -18,7 +20,6 @@ class FileProcessor:
     def process_element(self, el):
         tag = el['el'].split('.')[0]
         heading_level = int(tag[1]) if tag.startswith('h') and len(tag) > 1 and tag[1].isdigit() else 0
-        output = []
         if heading_level != 0:
             if 'TEXT_' in el:
                 self.current_headings[heading_level] = el['TEXT_']
@@ -31,20 +32,15 @@ class FileProcessor:
             for i in range(1, 7):
                 if self.current_headings[i]:
                     headings.append(self.current_headings[i])
-            output.append({
+            self.chunks.append({
                 "headings": headings,
                 "text": el['TEXT_']
             })
-            print(' > '.join(headings))
-            print('------')
-            print(el['TEXT_'])
-            print(' ')
             
         if 'ch' in el and el['ch']:
             for child in el['ch']:
                 self.process_element(child)
         
-        return output
 
 
 
@@ -55,7 +51,6 @@ def process_scraped_text(scrape: Scrape):
         print(' ')
         print(f"Found text file: {text_file}")
         print(' ')
-        # import yaml data
         with open(text_file, 'r', encoding='utf-8') as f:
             if scrape.project.config_data.output_format == 'yaml':
                 data = yaml.safe_load(f)
@@ -65,16 +60,23 @@ def process_scraped_text(scrape: Scrape):
             else:
                 print(f"Unsupported format: {scrape.project.config_data.output_format}")
                 continue
-        # pprint.pprint(data)
         file_processor = FileProcessor()
-        chunks = file_processor.process_element(data['body'])
-        # save chunks to scrape.chunked_text_dir
-        
-            
-        
-        
-        
-        
+        file_processor.process_element(data['body'])
+        chunks = file_processor.chunks
+        # pprint.pprint(chunks)
+
+        base_name = os.path.splitext(os.path.basename(text_file))[0]
+        output_path = scrape.chunked_text_dir / f"{base_name}.txt"
+        if not scrape.chunked_text_dir.exists():
+            scrape.chunked_text_dir.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as out_f:
+            for chunk in chunks:
+                headings = chunk.get("headings", [])
+                text = chunk.get("text", "")
+                out_f.write(' > '.join(headings) + '\n')
+                out_f.write('------\n')
+                out_f.write(text + '\n\n')
+        print(f"Chunks written to {output_path}")
 
 
 async def main():
