@@ -44,5 +44,7 @@
       ? element
       : null
   }
-  return walk(el)
+  return {
+    body: walk(el)
+  }
 }

@@ -99,8 +99,10 @@ urls = [
     # "https://brightlabs.staging.brightlabs.com.au/services/brand-strategy-and-design",
     # "https://brightlabs.staging.brightlabs.com.au/services/campaign-creative",
     # "https://brightlabs.staging.brightlabs.com.au/services/consultation",
-    "https://brightlabs.staging.brightlabs.com.au/services/content-strategy",
-    "https://brightlabs.staging.brightlabs.com.au/services/copywriting",
+    
+    # "https://brightlabs.staging.brightlabs.com.au/services/content-strategy",
+    # "https://brightlabs.staging.brightlabs.com.au/services/copywriting",
+    
     # "https://brightlabs.staging.brightlabs.com.au/services/crm-erp-integration",
     # "https://brightlabs.staging.brightlabs.com.au/services/custom-platform-app-development",
     # "https://brightlabs.staging.brightlabs.com.au/services/customer-experience",
@@ -108,8 +110,10 @@ urls = [
     # "https://brightlabs.staging.brightlabs.com.au/services/managed-services",
     "https://brightlabs.staging.brightlabs.com.au/services/pay-per-click",
     # "https://brightlabs.staging.brightlabs.com.au/services/print-advertising",
-    "https://brightlabs.staging.brightlabs.com.au/services/search-engine-optimisation",
-    "https://brightlabs.staging.brightlabs.com.au/services/social-media-advertising",
+    
+    # "https://brightlabs.staging.brightlabs.com.au/services/search-engine-optimisation",
+    # "https://brightlabs.staging.brightlabs.com.au/services/social-media-advertising",
+    
     # "https://brightlabs.staging.brightlabs.com.au/services/social-media-management",
     # "https://brightlabs.staging.brightlabs.com.au/services/ui-ux-design",
     # "https://brightlabs.staging.brightlabs.com.au/services/video-production",
@@ -171,5 +175,6 @@ async def main():
         # 'html',
         'yaml',
         # 'json',
-        auth=('brightlabs', 'brightlabs')
+        auth=('brightlabs', 'brightlabs'),
+        js_walker="bl_site",
     )

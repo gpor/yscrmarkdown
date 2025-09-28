@@ -6,13 +6,14 @@ async def scrape_and_write_to_file(
         urls: list[str],
         chat_system_prompt: str,
         output_format: str,
-        auth: tuple | None = None
+        auth: tuple | None = None,
+        js_walker: str | None = None
     ):
     project = Project(project_name)
 
     if output_format == 'json' or output_format == 'yaml':
         from lib.scrape_dom_walk_pw import Url_iterator_pw
-        url_iterator = Url_iterator_pw(urls, output_format, auth)
+        url_iterator = Url_iterator_pw(urls, output_format, auth, js_walker)
     else:
         from lib.scrape_crawl4ai import Url_iterator
         url_iterator = Url_iterator(urls, output_format, auth)

@@ -2,7 +2,7 @@ from playwright.async_api import async_playwright
 import json
 from pathlib import Path
 
-async def node_to_dict(element):
+async def node_to_dict(element, js_walker=None):
     allowed_tags = ["body", "div", "main", "ul", "li",
                     "h1", "h2", "h3", "h4", "h5", "h6", "p",
                     "section", "article", "header", "footer",
@@ -10,7 +10,7 @@ async def node_to_dict(element):
                     "pre", "code", "blockquote",
                     # "hr", "br", "nav",
                     ]
-    js_file = Path("js/dom_walker3.js")
+    js_file = Path(f"js/walker/{js_walker or 'default'}.js")
     js_code = js_file.read_text()
     dom = await element.evaluate(
         js_code,
@@ -18,7 +18,7 @@ async def node_to_dict(element):
     )
     return dom
 
-async def walk_dom(url, auth=None):
+async def walk_dom(url, auth=None, js_walker=None):
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         if auth:
@@ -36,20 +36,21 @@ async def walk_dom(url, auth=None):
             await browser.close()
             return {"status": status}
         body = await page.query_selector("body")
-        dom = await node_to_dict(body)
+        dom = await node_to_dict(body, js_walker)
         await context.close()
         await browser.close()
         return dom
 
 class Url_iterator_pw:
-    def __init__(self, urls, output_format, auth=None):
+    def __init__(self, urls, output_format, auth=None, js_walker=None):
         self.urls = urls
         self.output_format = output_format
         self.auth = auth
+        self.js_walker = js_walker
 
     async def crawl(self):
         for url in self.urls:
-            dom = await walk_dom(url, self.auth)
+            dom = await walk_dom(url, self.auth, self.js_walker)
             if isinstance(dom, dict) and "status" in dom:
                 output_text = f"HTTP status: {dom['status']}"
             elif self.output_format == 'yaml':
