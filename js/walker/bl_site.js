@@ -52,10 +52,23 @@
       : null
   }
   function fromHead() {
-    
+        // Find the <head> element
+    const doc = el.ownerDocument || (el.nodeType === 9 ? el : null)
+    const head = doc ? doc.querySelector('head') : null
+    if (!head) return { title: 'NO HEAD FOUND', metaDescription: null }
+
+    // Get <title>
+    const titleEl = head.querySelector('title')
+    const title = titleEl ? titleEl.textContent.trim() : null
+
+    // Get <meta name="description">
+    const metaEl = head.querySelector('meta[name="description"]')
+    const metaDescription = metaEl ? metaEl.getAttribute('content') : null
+
+    return { title, metaDescription }
   }
   return {
-    // head: fromHead(),
+    head: fromHead(),
     body: walk(el)
   }
 }

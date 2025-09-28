@@ -16,11 +16,13 @@ class Project:
     directory: Path = field(init=False)
     config_path: Path = field(init=False)
     config_data: Optional[ProjectConfig] = None
+    internal_links_file: Path = field(init=False)
     def __post_init__(self):
         self.directory = Path('storage') / self.name
         self.config_path = self.directory / 'config.json'
         if self.config_path.exists():
             self.config_data = ProjectConfig(**json.loads(self.config_path.read_text(encoding="utf-8")))
+        self.internal_links_file = self.directory / 'internal_links.py'
 
     def get_scrape_dirs(self) -> list[Path]:
         return get_dirs(self.directory)
@@ -40,6 +42,17 @@ class Project:
             json.dumps(self.config_data.__dict__, indent=2),
             encoding="utf-8"
         )
+
+    def write_internal_links_file(self, urls):
+        if not self.directory.exists():
+            self.directory.mkdir(parents=True, exist_ok=True)
+        with open(self.internal_links_file, 'w', encoding='utf-8') as f:
+            f.write(f"# Auto-generated internal links for project '{self.name}'\n")
+            f.write("urls = [\n")
+            for url in urls:
+                f.write(f"    '{url}',\n")
+            f.write("]\n")
+        print(f" Internal links written to {self.internal_links_file}")
 
 @dataclass
 class Scrape:

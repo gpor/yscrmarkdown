@@ -62,7 +62,7 @@ def process_scraped_text(scrape: Scrape):
                 continue
         # pprint.pprint(data)
         file_processor = FileProcessor()
-        file_processor.process_element(data)
+        file_processor.process_element(data['body'])
         
         
         

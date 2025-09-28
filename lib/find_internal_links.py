@@ -68,3 +68,9 @@ async def find_internal_links(
 
     return sorted(discovered)
 
+
+def write_internal_links_file(project_name: str, urls: list[str]):
+    from lib.classes import Project
+    project = Project(project_name)
+    project.write_internal_links_file(urls)
+

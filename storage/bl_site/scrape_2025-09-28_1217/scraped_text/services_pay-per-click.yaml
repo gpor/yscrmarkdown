@@ -1,0 +1,486 @@
+head:
+  title: customers, searches, smarter, turn, google | Bright Labs
+  metaDescription: "Google Ads campaign management  Your ad spend should work harder.\
+    \ Our Google Ads campaigns are built to connect you with real buyers, reduce wasted\u2026"
+body:
+  el: body
+  ch:
+  - el: div
+    ch:
+    - el: div
+      ch:
+      - el: div
+        ch:
+        - el: header.fixed.z-50.w-full.top-0.transition-all.duration-700.ease-in-out.bg-(--nav-bg).is-nav-dark.header-is-transparent
+          TEXT_: '[Skip to main content](#main)'
+          ch:
+          - el: div.flex.items-center.justify-between.container-fluid.xl:py-12.py-6.z-50
+            TEXT_: '[Bright Labs Logo](/) Primary Mobile menu.'
+        - el: main.w-100dvw
+          ch:
+          - el: div
+            ch:
+            - el: section.container-fluid.xl:pt-48.md:pt-36.pt-32.xl:pb-16.md:pb-12.pb-8.flex.flex-col.relative.overflow-x-clip
+              ch:
+              - el: div.relative
+                ch:
+                - el: p.md:max-2xl:px-16.text-lg.xl:mb-6.mb-4
+                  TEXT_: Pay Per Click advertising
+                - el: h1.md:max-2xl:px-16.text-balance.xl:text-heading-2xl.md:text-heading-lg.sm:text-heading-lg.text-heading-md.font-semibold.max-w-[1522px].text-almost-black
+                  TEXT_: Turn searches into customers with smarter Google Ads
+          - el: section.bg-white.text-almost-black.xl:my-32.lg:my-24.my-16.animate-initial
+            ch:
+            - el: div.xl:mb-8.lg:md-6.mb-4.container
+              ch:
+              - el: h2.text-heading-md.lg:text-heading-xl.max-w-320.font-semibold.xl:space-x-4.lg:space-x-3.space-x-2.anim-fadeIn.anim-2
+                TEXT_: Google Ads campaign management
+            - el: div.container
+              ch:
+              - el: div.anim-fadeIn.anim-3.text-almost-black.xl:mb-18.lg:md-12.mb-8
+                ch:
+                - el: div.rich-text
+                  ch:
+                  - el: p
+                    TEXT_: "Your ad spend should work harder. Our Google Ads campaigns\
+                      \ are built to connect you with real buyers, reduce wasted clicks,\
+                      \ and deliver measurable ROI. We plan, launch and optimise across\
+                      \ Search, Display, Shopping and YouTube, making sure your ads\
+                      \ reach the right people at the right time. Every campaign aligns\
+                      \ with your goals so you capture customers exactly when they\u2019\
+                      re looking for your product or service."
+            - el: div.container
+              ch:
+              - el: div.grid.gap-6.grid-cols-1.md:grid-cols-2.lg:gap-x-6.lg:grid-cols-4.animate-initial
+                ch:
+                - el: div.xl:space-y-4.space-y-2.anim-slideIn.anim-3
+                  ch:
+                  - el: h3.xl:text-heading-sm.lg:text-heading-xs.text-lg.font-semibold
+                    TEXT_: Reach the right people at the right time
+                  - el: div.text-md
+                    ch:
+                    - el: div.rich-text
+                      ch:
+                      - el: p
+                        TEXT_: Advanced keyword research and audience targeting put
+                          your brand in front of customers with intent to buy.
+                - el: div.xl:space-y-4.space-y-2.anim-slideIn.anim-4
+                  ch:
+                  - el: h3.xl:text-heading-sm.lg:text-heading-xs.text-lg.font-semibold
+                    TEXT_: Ads that drive real results, not vanity clicks
+                  - el: div.text-md
+                    ch:
+                    - el: div.rich-text
+                      ch:
+                      - el: p
+                        TEXT_: "Our campaigns are designed to drive enquiries, sales\
+                          \ and measurable results\u2014not vanity clicks."
+                - el: div.xl:space-y-4.space-y-2.anim-slideIn.anim-5
+                  ch:
+                  - el: h3.xl:text-heading-sm.lg:text-heading-xs.text-lg.font-semibold
+                    TEXT_: The right mix of channels to maximise impact
+                  - el: div.text-md
+                    ch:
+                    - el: div.rich-text
+                      ch:
+                      - el: p
+                        TEXT_: We know how to get the most from Search, Display, Shopping
+                          and YouTube to maximise your reach and impact.
+                - el: div.xl:space-y-4.space-y-2.anim-slideIn.anim-6
+                  ch:
+                  - el: h3.xl:text-heading-sm.lg:text-heading-xs.text-lg.font-semibold
+                    TEXT_: Clear reporting that keeps you in control
+                  - el: div.text-md
+                    ch:
+                    - el: div.rich-text
+                      ch:
+                      - el: p
+                        TEXT_: "Clear dashboards and regular reports show exactly\
+                          \ how your spend performs, so you\u2019re always in control."
+          - el: section.bg-white.text-almost-black.xl:my-32.lg:my-24.my-16.animate-initial
+            ch:
+            - el: div.container.flex.flex-no-wrap.lg:flex-row.flex-col.lg:gap-16.gap-8.lg:items-center.items-start
+              ch:
+              - el: div.lg:order-2.flex.flex-col.gap-y-4
+                ch:
+                - el: div.anim-fadeIn.anim-2
+                  ch:
+                  - el: div.rich-text
+                    ch:
+                    - el: h4
+                      TEXT_: Advanced campaign strategies.
+                    - el: p
+                      TEXT_: We combine smart bidding, negative keyword management
+                        and ongoing A/B testing to make your budget go further. From
+                        ad copy to landing pages, every element is optimised to improve
+                        relevance, reduce wasted spend and lower your cost per acquisition.
+                        With constant monitoring and adjustments, your ads stay competitive
+                        and deliver consistent growth.
+          - el: section.bg-white.text-almost-black.xl:my-32.lg:my-24.my-16.animate-initial
+            ch:
+            - el: div.container.flex.flex-no-wrap.lg:flex-row.flex-col.lg:gap-16.gap-8.lg:items-center.items-start
+              ch:
+              - el: div.lg:order-1.flex.flex-col.gap-y-4
+                ch:
+                - el: div.anim-fadeIn.anim-2
+                  ch:
+                  - el: div.rich-text
+                    ch:
+                    - el: h4
+                      TEXT_: Why Google Ads with Bright Labs.
+                    - el: p
+                      TEXT_: "As a certified Google Partner, we know what it takes\
+                        \ to build campaigns that convert. We\u2019ve scaled budgets,\
+                        \ cut acquisition costs and delivered sustainable results\
+                        \ for businesses across industries. Every strategy is tailored\
+                        \ to your goals, balancing quick wins with long-term growth,\
+                        \ so your Google Ads investment delivers maximum return."
+          - el: section.bg-white.text-almost-black.xl:my-32.lg:my-24.my-16.animate-initial
+            ch:
+            - el: div.container.flex.flex-no-wrap.lg:flex-row.flex-col.lg:gap-16.gap-8.lg:items-center.items-start
+              ch:
+              - el: div.lg:order-2.flex.flex-col.gap-y-4
+                ch:
+                - el: div.anim-fadeIn.anim-2
+                  ch:
+                  - el: div.rich-text
+                    ch:
+                    - el: h4
+                      TEXT_: Ready to grow with Google Ads?
+                    - el: p
+                      TEXT_: Google Ads is the fastest way to get in front of customers
+                        already searching for what you offer. Bright Labs will design
+                        and manage campaigns that put your business at the top of
+                        search results, boost visibility and generate real growth.
+          - el: section.bg-nearly-white.text-almost-black.xl:py-32.lg:py-24.py-16.animate-initial
+            ch:
+            - el: div.xl:mb-16.lg:md-12.mb-8.container
+              ch:
+              - el: p.text-almost-black.xl:mb-6.mb-4.lg:text-heading-sm.text-lg.font-semibold.anim-fadeIn.anim-1
+                TEXT_: You've got questions
+              - el: h2.xl:text-heading-2xl.lg:text-heading-lg.text-heading-md.max-w-320.font-semibold.xl:space-x-4.lg:space-x-3.space-x-2.anim-fadeIn.anim-2
+                TEXT_: We've got answers.
+            - el: div.container.space-y-0.animate-initial
+              ch:
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-2
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: We have scaled ad budgets, reduced acquisition
+                              costs and helped businesses across industries grow sustainably.
+                              Our tailored strategies balance quick wins with long-term
+                              performance, making sure your Google Ads investment
+                              delivers maximum return.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-3
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: Google Ads can start driving traffic and leads
+                              almost immediately once campaigns go live. However,
+                              optimising for cost-effectiveness and consistent growth
+                              usually takes a few weeks of fine-tuning.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-4
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: Yes. Google Ads is not a set and forget channel.
+                              We constantly monitor performance, run A/B testing,
+                              refine targeting and adjust strategies to keep your
+                              ads competitive and cost-effective.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-5
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: There is no fixed amount as it depends on your
+                              industry, competition and business goals. We work with
+                              your budget to maximise results, ensuring every dollar
+                              spent goes towards driving genuine leads and sales.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-6
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: We provide clear dashboards and detailed reports
+                              that show exactly how your ad spend performs. You will
+                              see key metrics such as clicks, conversions, cost per
+                              lead and overall return on investment, so you are always
+                              in control.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-7
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: As a certified Google Partner, we bring proven
+                              strategies, ongoing optimisation and industry expertise.
+                              We focus on reducing cost per acquisition, improving
+                              ad relevance and delivering results you can measure,
+                              not just vanity clicks.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-8
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: We use advanced keyword research, negative keyword
+                              management, audience targeting and smart bidding strategies.
+                              This ensures your ads show to the right people at the
+                              right time, reducing wasted clicks and maximising ROI.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-9
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: 'There are several campaign types to suit different
+                              goals:'
+                          - el: ul
+                            ch:
+                            - el: li
+                              TEXT_: Search Ads for direct intent and enquiries
+                            - el: li
+                              TEXT_: Display Ads to increase brand awareness
+                            - el: li
+                              TEXT_: Shopping Ads to promote products with images
+                                and pricing
+                            - el: li
+                              TEXT_: YouTube Ads for video engagement and visibility
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-10
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: Google Ads puts your business in front of people
+                              who are searching with intent to buy. With the right
+                              keyword targeting, ad copy and landing pages, it can
+                              generate more leads, sales and enquiries while giving
+                              you measurable returns on your investment.
+              - el: section.w-full.transition-all.duration-200.ease-in-out.border-y.border-gray-200.anim-fadeIn.anim-11
+                ch:
+                - el: div.h-0.overflow-hidden
+                  ch:
+                  - el: div.xl:pb-8.md:pb-6.pb-4
+                    ch:
+                    - el: div.text-gray-600.w-full.xl:text-lg.md:text-base.text-sm
+                      ch:
+                      - el: div.p-mobile-14px
+                        ch:
+                        - el: div.rich-text
+                          ch:
+                          - el: p
+                            TEXT_: Pay-per-click advertising is a digital marketing
+                              model where you pay only when someone clicks on your
+                              ad. Google Ads is the most popular PPC platform, helping
+                              businesses appear at the top of search results and reach
+                              people actively looking for their products or services.
+          - el: section.bg-lux-blue.text-white.xl:py-32.lg:py-24.py-16.animate-initial
+            ch:
+            - el: div.container
+              ch:
+              - el: p.lg:text-quote-xl.text-quote-sm.anim-fadeIn.anim-1
+                TEXT_: "\u201C\u201D"
+              - el: div.mt-24.flex.flex-row.justify-between.items-center.anim-fadeIn.anim-2
+                ch:
+                - el: div
+                  ch:
+                  - el: h2.lg:text-heading-lg.text-heading-sm
+                    TEXT_: Testimonial shared by
+                  - el: p.lg:text-lg.text-md.mt-2
+                    TEXT_: Focus Dynamics Group
+          - el: section.bg-white.text-almost-black.xl:my-32.lg:my-24.my-16.animate-initial
+            ch:
+            - el: div.xl:mb-16.lg:md-12.mb-8.container
+              ch:
+              - el: p.text-almost-black.xl:mb-6.mb-4.lg:text-heading-sm.text-lg.font-semibold.anim-fadeIn.anim-1
+                TEXT_: Make an enquiry
+              - el: h2.xl:text-heading-2xl.lg:text-heading-lg.text-heading-md.max-w-320.font-semibold.xl:space-x-4.lg:space-x-3.space-x-2.anim-fadeIn.anim-2
+                TEXT_: Need A Pay Per Click Agency? Enquire today.
+          - el: section.bg-lux-blue.text-white.animate-initial
+            ch:
+            - el: div.py-16.sm:py-32.container.grid.sm:grid-cols-[1fr,auto]
+              ch:
+              - el: h2.text-[2rem].lg:text-8xl.font-semibold.anim-fadeIn.anim-1
+                TEXT_: Explore more.
+              - el: div.grid.sm:grid-cols-2.gap-6.mt-8.sm:mt-14.sm:col-span-2
+                TEXT_: '[](https://brightlabs.staging.brightlabs.com.au/work/abey-australia)'
+              - el: div.flex.items-center.sm:justify-end.max-sm:pt-8.sm:col-start-2.sm:row-start-1.anim-fadeIn.anim-4
+                TEXT_: '[View all our work](/work)'
+        - el: footer
+          ch:
+          - el: div.bg-almost-black.text-white.transition-all.duration-300.lg:pb-32.pb-16
+            ch:
+            - el: section.container.text-center.xl:py-32.py-16
+              TEXT_: '[Let''s Talk](/contact)'
+              ch:
+              - el: p.text-grey-400.font-semibold.text-p-lg.sm:text-heading-sm.mb-2.lg:mb-4
+                TEXT_: Have a project to discuss?
+              - el: h2.font-sans.text-heading-md.sm:text-heading-xl.xl:text-heading-2xl.font-semibold.text-white.relative.w-auto
+                TEXT_: "Let\u2019s make magic"
+            - el: section.container.flex.justify-between.xl:flex-row.flex-col.2xl:gap-x-36.xl:gap-x-24.gap-y-16.xl:pt-32.pt-16.xl:px-0
+              ch:
+              - el: div.xl:flex.justify-between.hidden.2xl:gap-x-36.xl:gap-x-24
+                ch:
+                - el: div.flex.flex-col.gap-6
+                  TEXT_: '[What We Do](/services)'
+                  ch:
+                  - el: div.flex.flex-row.2xl:gap-x-23.gap-x-16
+                    ch:
+                    - el: div.flex.flex-col.gap-10.5.min-w-52
+                      ch:
+                      - el: div.flex.flex-col.gap-4
+                        TEXT_: '[Consultation](/services/consultation) [Customer Experience](/services/customer-experience)'
+                        ch:
+                        - el: h3.text-sm.text-grey-400.opacity-50
+                          TEXT_: Strategy
+                      - el: div.flex.flex-col.gap-4
+                        TEXT_: '[UI & UX Design](/services/ui-ux-design) [Brand Strategy
+                          and Design](/services/brand-strategy-and-design) [Campaign
+                          Creative](/services/campaign-creative) [Print & Advertising](/services/print-advertising)
+                          [Video Production](/services/video-production)'
+                        ch:
+                        - el: h3.text-sm.text-grey-400.opacity-50
+                          TEXT_: Creative
+                      - el: div.flex.flex-col.gap-4
+                        TEXT_: '[Websites](/services/websites) [Ecommerce](/services/ecommerce)
+                          [CRM & ERP integration](/services/crm-erp-integration) [Custom
+                          Platform/App Development](/services/custom-platform-app-development)
+                          [Managed Services](/services/managed-services)'
+                        ch:
+                        - el: h3.text-sm.text-grey-400.opacity-50
+                          TEXT_: Technology
+                    - el: div.flex.flex-col.gap-10.5.min-w-52
+                      ch:
+                      - el: div.flex.flex-col.gap-4
+                        TEXT_: '[Pay Per Click](/services/pay-per-click) [Social Media
+                          Advertising](/services/social-media-advertising) [Search
+                          Engine Optimisation](/services/search-engine-optimisation)
+                          [Social Media Management](/services/social-media-management)'
+                        ch:
+                        - el: h4.text-sm.text-grey-400.opacity-50
+                          TEXT_: Performance Marketing
+                      - el: div.flex.flex-col.gap-4
+                        TEXT_: '[Copywriting](/services/copywriting) [Content Strategy](/services/content-strategy)'
+                        ch:
+                        - el: h4.text-sm.text-grey-400.opacity-50
+                          TEXT_: Content
+                - el: div.flex.flex-col.gap-6
+                  ch:
+                  - el: h3.text-p-lg
+                    TEXT_: Experience
+                  - el: div.flex.flex-col.gap-10.5.min-w-52
+                    ch:
+                    - el: div.flex.flex-col.gap-4
+                      TEXT_: '[Health & Aged Care](/industries/health-aged-care) [Non-Profit](/industries/non-profit)
+                        [Government](/industries/government) [Technology & Media](/industries/technology-media)
+                        [Education](/industries/education) [Professional Services](/industries/professional-services)
+                        [Hardware & Manufacturing](/industries/hardware-manufacturing)
+                        [Financial Services & Insurance](/industries/financial-services)
+                        [Legal](/industries/legal)'
+                      ch:
+                      - el: h4.text-sm.text-grey-400.opacity-50
+                        TEXT_: Industries
+                    - el: div.flex.flex-col.gap-4
+                      TEXT_: '[Craft CMS](/platforms-solutions/craft-cms) [Google
+                        Partner](/platforms-solutions/google-partner) [Wordpress](/platforms-solutions/wordpress)
+                        [SAP](/platforms-solutions/sap)'
+                      ch:
+                      - el: h4.text-sm.text-grey-400.opacity-50
+                        TEXT_: Platforms
+            - el: section.container.mt-16
+              ch:
+              - el: div.@container.flex.flex-wrap.gap-8.justify-between.@3xl:items-center
+                ch:
+                - el: section.flex.flex-row.gap-10.mt-5.justify-between.lg:w-auto.w-full.text-xs
+                  ch:
+                  - el: h3.sr-only
+                    TEXT_: Legal Links
+                  - el: p.text-grey-550
+                    TEXT_: "\xA92025 Bright Labs"
+          - el: section.container-fluid.bg-aboriginal-red.relative.md:py-16.pb-8.pt-16
+            ch:
+            - el: div.text-center.text-white
+              ch:
+              - el: h3.md:text-heading-sm.text-p-md.md:font-semibold.mb-4
+                TEXT_: Acknowledgement of Country
+              - el: div.max-w-[1130px].m-auto.p-mobile-12px.text-p-xs.align-middle.font-weight-normal.tracking-normal.whitespace-normal
+                ch:
+                - el: div.rich-text
+                  ch:
+                  - el: p
+                    TEXT_: In the spirit of reconciliation Bright Labs acknowledges
+                      the Traditional Custodians of Country throughout Australia and
+                      their connections to land, sea and community. We pay our respect
+                      to their Elders past and present and extend that respect to
+                      all Aboriginal and Torres Strait Islander peoples today.
