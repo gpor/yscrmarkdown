@@ -1,9 +1,18 @@
 
-(el, allowed) => {
+(el) => {
   const inline = new Set(["strong", "em", "b", "i", "span", "a"])
-  const allow = new Set(allowed)
+  const allow = new Set(["body", "div", "main", "ul", "li",
+                    "h1", "h2", "h3", "h4", "h5", "h6", "p",
+                    "section", "article", "header", "footer",
+                    "table", "thead", "tbody", "tr", "th", "td",
+                    "pre", "code", "blockquote",
+                    // "hr", "br", "nav",
+                    ])
 
   function walk(node) {
+    if (node.getAttribute && (ariaHidden = node.getAttribute('aria-hidden')) && typeof ariaHidden === 'string' && ariaHidden.toLowerCase() === 'true') {
+      return null
+    }
     const element = {}
     const textParts = []
     const childrenElements = []
@@ -13,8 +22,12 @@
     } else if (node.nodeType === Node.ELEMENT_NODE) {
       element.el = node.tagName.toLowerCase()
       if (!allow.has(element.el) && !inline.has(element.el)) {
-        ariaLabel = node.getAttribute('aria-label')
-        return ariaLabel || null
+        if (ariaLabel = node.getAttribute('aria-label')) {
+          return ariaLabel
+        } else if (altText = node.getAttribute('alt')) {
+          return altText
+        }
+        return null
       }
       [...node.childNodes].forEach(n => {
         const elementOrText = walk(n)
@@ -39,6 +52,9 @@
     }
     if (textParts.length) {
       element.TEXT_ = textParts.join(' ')
+      if (element.TEXT_.length < 4) {
+        return null // Really just assuming that it's insignificant
+      }
     }
     if (childrenElements.length) {
       element.ch = childrenElements

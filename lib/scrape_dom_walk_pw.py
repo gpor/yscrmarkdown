@@ -3,18 +3,17 @@ import json
 from pathlib import Path
 
 async def node_to_dict(element, js_walker=None):
-    allowed_tags = ["body", "div", "main", "ul", "li",
-                    "h1", "h2", "h3", "h4", "h5", "h6", "p",
-                    "section", "article", "header", "footer",
-                    "table", "thead", "tbody", "tr", "th", "td",
-                    "pre", "code", "blockquote",
-                    # "hr", "br", "nav",
-                    ]
+    # allowed_tags = ["body", "div", "main", "ul", "li",
+    #                 "h1", "h2", "h3", "h4", "h5", "h6", "p",
+    #                 "section", "article", "header", "footer",
+    #                 "table", "thead", "tbody", "tr", "th", "td",
+    #                 "pre", "code", "blockquote",
+    #                 # "hr", "br", "nav",
+    #                 ]
     js_file = Path(f"js/walker/{js_walker or 'default'}.js")
     js_code = js_file.read_text()
     dom = await element.evaluate(
         js_code,
-        allowed_tags
     )
     return dom
 
