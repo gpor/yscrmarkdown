@@ -13,7 +13,14 @@ def process_scraped_text(scrape: Scrape):
         # if data is None:
         #     continue
         
-        file_processor.process_element(data['body'])
+        heading_processor = None
+        if file_processor.base_name == 'home':
+            def heading_processor(text):
+                if text.strip() == "[Bright Labs](/)":
+                    return "Bright Labs"
+                return text
+        
+        file_processor.process_element(data['body'], heading_processor)
         chunks = file_processor.chunks
         # pprint.pprint(chunks)
         

@@ -18,12 +18,12 @@ class FileProcessor:
             6: None
         }
     
-    def process_element(self, el):
+    def process_element(self, el, heading_processor = None, content_processor = None):
         tag = el['el'].split('.')[0]
         heading_level = int(tag[1]) if tag.startswith('h') and len(tag) > 1 and tag[1].isdigit() else 0
         if heading_level != 0:
             if 'TEXT_' in el:
-                self.current_headings[heading_level] = el['TEXT_']
+                self.current_headings[heading_level] = el['TEXT_'] if heading_processor is None else heading_processor(el['TEXT_'])
                 for i in range(heading_level + 1, 7):
                     self.current_headings[i] = None
             else:
@@ -35,12 +35,12 @@ class FileProcessor:
                     headings.append(self.current_headings[i])
             self.chunks.append({
                 "headings": headings,
-                "text": el['TEXT_']
+                "text": el['TEXT_'] if content_processor is None else content_processor(el['TEXT_'])
             })
             
         if 'ch' in el and el['ch']:
             for child in el['ch']:
-                self.process_element(child)
+                self.process_element(child, heading_processor)
     
     def read_file(self):
         try:
