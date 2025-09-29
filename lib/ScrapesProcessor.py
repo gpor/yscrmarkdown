@@ -43,15 +43,16 @@ class FileProcessor:
                 self.process_element(child)
     
     def read_file(self):
-        with open(self.text_file, 'r', encoding='utf-8') as f:
-            if self.scrape_format == 'yaml':
-                return yaml.safe_load(f)
-            elif self.scrape_format == 'json':
-                import json
-                return json.load(f)
-            # else:
-            #     print(f"Unsupported format: {self.scrape_format}")
-            #     return None
+        try:
+            with open(self.text_file, 'r', encoding='utf-8') as f:
+                if self.scrape_format == 'yaml':
+                    return yaml.safe_load(f)
+                elif self.scrape_format == 'json':
+                    import json
+                    return json.load(f)
+        except Exception as e:
+            print(f"Error reading {self.text_file}: {e}")
+            return None
 
 class ScrapesProcessor:
     def __init__(self, scrape: Scrape):
